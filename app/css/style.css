@@ -1,5 +1,5 @@
 html body {
-  background: black;
+  background: tomato;
   -webkit-transform: translate3d(1, 1, 1);
           transform: translate3d(1, 1, 1);
   -webkit-animation: MyAnimation 1s ease-in-out;

@@ -1,27 +1,37 @@
 var gulp = require('gulp');
-
+// SASS Tasks
 var sass = require('gulp-sass');
-
+// CSS Tasks
 var postcss      = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-
+// JS Tasks
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 
-gulp.task('sass', function(){
+// Build SASS
+gulp.task('build-sass', function(){
   return gulp.src('app/scss/style.scss')
-    .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(postcss([ autoprefixer() ]))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('useref', function(){
+// Build JS
+gulp.task('build-js', function(){
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
-    // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
     .pipe(gulp.dest('dist'))
 }); 
+
+//Build CSS
+// gulp.task('build-css', function(){
+//   return gulp.src('app/*.html')
+//     .pipe(useref())
+//     .pipe(gulpIf('*.css', cssnano()))
+//     .pipe(gulp.dest('dist'))
+// }); 
+
+gulp.task('build', ['build-sass', 'build-js'])
