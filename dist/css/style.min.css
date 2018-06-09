@@ -1,0 +1,1 @@
+html body{background:red;-webkit-transform:translate3d(1, 1, 1);transform:translate3d(1, 1, 1);-webkit-animation:MyAnimation 1s ease-in-out;animation:MyAnimation 1s ease-in-out}@-webkit-keyframes MyAnimation{0%{left:0}50%{left:200px}100%{left:20px}}@keyframes MyAnimation{0%{left:0}50%{left:200px}100%{left:20px}}
