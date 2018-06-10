@@ -8,14 +8,21 @@
     position: relative;
     overflow: hidden;
 
+
     .one__container {
-        width: 80%;
+        width: 60%;
         height: 80%;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $primary-color, $alpha: .1);
+        background-size: 12px 12px;
+        // border: 1px solid $primary-color;
 
+        .container__padding {
+            padding: 4rem;
+        }
         .one__header {
             font-size: .825rem;
             text-transform: uppercase;
