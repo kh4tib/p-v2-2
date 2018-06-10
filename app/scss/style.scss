@@ -1,6 +1,10 @@
 
 @charset 'utf-8';
 
+// Basis
+@import 'basis/globals';
+@import 'basis/colors';
+@import 'basis/fonts';
+
 // Pages
 @import 'pages/home';
-@import 'pages/about';
