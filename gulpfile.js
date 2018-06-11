@@ -41,3 +41,9 @@ gulp.task('build-js', function (cb) {
 
 // Build All
 gulp.task('build', ['build-sass', 'build-js'])
+
+// Watchers
+gulp.task('watch', function(){
+  gulp.watch('app/scss/**/*.scss', ['build-sass']);
+  gulp.watch('app/js/**/*.js', ['build-js']);
+});
