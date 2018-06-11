@@ -1,14 +1,13 @@
 .section__one {
-    width: calc(100% - 2rem);
-    height: calc(100% - 2rem);
+    width: calc(100% - 8rem);
+    height: calc(100% - 8rem);
     display: flex;
     align-items: center;
     justify-content: center;
     background: $dark-color;
     position: relative;
     overflow: hidden;
-    border: 1rem solid $primary-color;
-
+    border: 4rem solid $dark-color;
 
     .one__container {
         width: 100%;
