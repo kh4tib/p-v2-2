@@ -19,9 +19,15 @@
         background-size: 12px 12px;
         padding-left: 4rem;
 
-        .about,
+        .introduction,
         .projects {
             margin-bottom: 6rem;
+
+            p {
+                margin-top: 1rem;
+                max-width: 40%
+            }
+            
         }
     }
 }
