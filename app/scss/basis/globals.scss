@@ -11,3 +11,47 @@ body {
     box-sizing: border-box;
     font-family: $primary-font;
 }
+a {
+    font-size: 1rem;
+    display: block;
+    text-decoration: none;
+    color: $light-color;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: line-through;
+        text-decoration-color: $primary-color;
+        color: $primary-color;
+    }
+}
+
+li, ul {
+    font-size: 1rem;
+    list-style: none;
+    color: $light-color;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 150%;
+    color: $dark-shade-color
+    
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 125%;
+    color: $light-color;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    line-height: 125%;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}

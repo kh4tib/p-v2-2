@@ -6,7 +6,6 @@
     justify-content: center;
     background: $dark-color;
     position: relative;
-    overflow: hidden;
     border: 4rem solid $dark-color;
 
     .one__container {
@@ -16,29 +15,13 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $primary-color, $alpha: .1);
+        background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $primary-color, $alpha: .15);
         background-size: 12px 12px;
+        padding-left: 4rem;
 
-        .container__padding {
-            padding: 4rem;
-        }
-        .one__header {
-            font-size: .825rem;
-            text-transform: uppercase;
-            letter-spacing: .2rem;
-            color: $primary-color;
-            margin-bottom: 1rem;
-        }
-    
-        .one__content {
-            color: $light-shade-color;
-            width: 50%;
-        }
-    
-        .--dark-light-shade {
-            font-size: .825rem;
-            color: $dark-shade-color;
-            margin-top: 1rem;
+        .about,
+        .projects {
+            margin-bottom: 6rem;
         }
     }
 }
