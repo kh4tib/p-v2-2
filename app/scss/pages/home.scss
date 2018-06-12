@@ -19,15 +19,19 @@
         background-size: 12px 12px;
         padding-left: 4rem;
 
+        .one__columns {
+            margin-top: 4rem;
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
         .introduction,
-        .projects {
-            margin-bottom: 6rem;
-
-            p {
+        .projects,
+        .skills {
+             p {
                 margin-top: 1rem;
-                max-width: 40%
+                max-width: 50%
             }
-            
         }
     }
 }
