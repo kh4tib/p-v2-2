@@ -13,6 +13,7 @@ body {
 }
 a {
     font-size: 1rem;
+    line-height: 200%;
     display: block;
     text-decoration: none;
     color: $light-color;
@@ -30,13 +31,13 @@ li, ul {
     font-size: 1rem;
     list-style: none;
     color: $light-color;
+    line-height: 200%;
 }
 
 p {
     font-size: 1rem;
     line-height: 150%;
-    color: $dark-shade-color
-    
+    color: $dark-shade-color;
 }
 
 h1 {

@@ -18,6 +18,9 @@
         background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $primary-color, $alpha: .15);
         background-size: 12px 12px;
         padding-left: 4rem;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
 
         .one__columns {
             margin-top: 4rem;
@@ -30,7 +33,29 @@
         .skills {
              p {
                 margin-top: 1rem;
-                max-width: 50%
+                max-width: 50%;
+            }
+        }
+
+        .one__elements {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: -1;
+            @for $i from 1 through 8 {
+                :nth-child(#{$i}) {
+                    width: $i *10rem;
+                    height: $i *10rem;
+                    transform: rotate($i * 8deg);
+                    border: 1px solid $primary-color;
+                    position: absolute;
+                    right: -30rem;
+                    
+
+                }
             }
         }
     }
