@@ -1,12 +1,13 @@
 .section__one {
-    width: calc(100% - 8rem);
-    height: calc(100% - 8rem);
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
     display: flex;
     align-items: center;
     justify-content: center;
     background: $dark-color;
     position: relative;
-    border: 4rem solid $dark-color;
+    border: 2rem solid $dark-color;
+    overflow: hidden;
 
     .one__container {
         width: 100%;
@@ -18,22 +19,26 @@
         background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $primary-color, $alpha: .15);
         background-size: 12px 12px;
         padding-left: 4rem;
-        overflow: hidden;
+        padding-right: 4rem;
         position: relative;
         z-index: 1;
 
         .one__columns {
-            margin-top: 4rem;
+            margin-top: 2rem;
             display: flex;
-            width: 50%;
+            width: 60%;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         .introduction,
         .projects,
-        .skills {
+        .skills,
+        .contact {
+            margin-top: 2rem;
+            margin-right: 2rem;
              p {
                 margin-top: 1rem;
-                max-width: 50%;
+                width: 60%;
             }
         }
 
@@ -53,10 +58,27 @@
                     border: 1px solid $primary-color;
                     position: absolute;
                     right: -30rem;
-                    
-
                 }
             }
         }
     }
 }
+
+@media only screen and (max-width:768px) {
+    .section__one {
+        height: auto;
+
+        .one__container {
+            height: auto;
+
+            .introduction p {
+                width: 100%;
+            }
+            
+            .one__columns {
+                width: 100%;
+            }
+        }
+    }
+}
+

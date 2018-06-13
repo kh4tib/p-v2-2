@@ -10,7 +10,32 @@ body {
     height: 100%;
     box-sizing: border-box;
     font-family: $primary-font;
+    background-color: $dark-color;
+    font-size: 1rem;
 }
+
+// Selection Styles
+::selection {
+    color: $light-color; 
+    background: blueviolet;
+}
+
+// Scroll Styles
+::-webkit-scrollbar {
+    width: .5rem;
+    background: $dark-color;
+    border: 1px solid $primary-color;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+
+    &:hover {
+        background: darken($color: $primary-color, $amount: 4)
+    }
+}
+// Main Attributes Styles
 a {
     font-size: 1rem;
     line-height: 200%;
