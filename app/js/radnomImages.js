@@ -9,9 +9,7 @@ var randomImageArray = [
 function getRandomImage(imgAr) {
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<section class="section__404"><img class="section__404" src="'+ img + '" alt = "randomImage"></section';
+    var imgStr = '<section class="section__404"><img src="'+ img + '" alt = "randomImage"></section';
     document.write(imgStr);
     document.close();
 };
-
-getRandomImage(randomImageArray);
