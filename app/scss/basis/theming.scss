@@ -1,0 +1,39 @@
+// Color Theming
+
+// Tomato Theme Styles
+.color__modifier__tomato {
+    .section__one .one__container .one__elements i {
+        border:1px solid tomato;
+        border-radius: 10rem;
+        transform: rotate(10deg);
+    }
+        h4 {
+        color:tomato;
+        
+    }
+
+    .introduction h1 .cursor {
+        color: tomato;
+    }
+
+    a:hover {
+        color: tomato;
+        text-decoration-color:tomato;
+    }
+}
+
+    // // Scroll Styles
+    // ::-webkit-scrollbar {
+    //     width: .5rem;
+    //     background: $dark-color;
+    //     border: 1px solid tomato !important;
+    //     cursor: pointer;
+    // }
+    
+    // ::-webkit-scrollbar-thumb {
+    //     background: tomato;
+    
+    //     &:hover {
+    //         background: darken($color: tomato, $amount: 4)
+    //     }
+    // }
