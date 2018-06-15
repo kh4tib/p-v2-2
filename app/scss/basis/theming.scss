@@ -20,20 +20,21 @@
         color: tomato;
         text-decoration-color:tomato;
     }
+
+    // Scroll Styles
+    &::-webkit-scrollbar {
+        width: .5rem;
+        background: $dark-color;
+        border: 1px solid tomato !important;
+        cursor: pointer;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: tomato;
+    
+        &:hover {
+            background: darken($color: tomato, $amount: 4)
+        }
+    }
 }
 
-    // // Scroll Styles
-    // ::-webkit-scrollbar {
-    //     width: .5rem;
-    //     background: $dark-color;
-    //     border: 1px solid tomato !important;
-    //     cursor: pointer;
-    // }
-    
-    // ::-webkit-scrollbar-thumb {
-    //     background: tomato;
-    
-    //     &:hover {
-    //         background: darken($color: tomato, $amount: 4)
-    //     }
-    // }
