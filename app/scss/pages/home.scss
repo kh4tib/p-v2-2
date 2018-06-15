@@ -16,7 +16,7 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $primary-color, $alpha: .15);
+        background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $dark-shade-color, $alpha: .1);
         background-size: 12px 12px;
         padding-left: 4rem;
         padding-right: 4rem;
