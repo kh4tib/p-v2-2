@@ -1,0 +1,31 @@
+// Color Theming
+
+// Eve Theme Styles
+
+@each $theme-name, $color-value, $radius-value, $rotation-value in 
+    (eve, $eve-theme-color, 0rem, 10deg),
+    (flow, $flow-theme-color, 15rem, 90deg),
+    (sante,$sante-theme-color, 50rem, -90deg),
+    (exquisite, $exquisite-theme-color, 5rem, -10deg){
+    
+    .--project-theme-#{$theme-name} {
+        .section__one .one__container .one__elements i {
+            border: 2px solid $color-value;
+            border-radius: $radius-value;
+            transform: rotate($rotation-value);
+            transition: 1s ease-in-out;
+        }
+            h4 {
+            color: $color-value;
+        }
+
+        .introduction h1 .cursor {
+            color: $color-value;
+        }
+
+        a:hover {
+            color: $color-value;
+            text-decoration-color: $color-value;
+        }
+    }
+}

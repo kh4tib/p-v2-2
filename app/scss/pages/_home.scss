@@ -57,6 +57,7 @@
                     transform: rotate($i * 8deg);
                     border: 1px solid $primary-color;
                     position: absolute;
+                    transition: 1s ease-in-out;
                     right: -30rem;
                 }
             }

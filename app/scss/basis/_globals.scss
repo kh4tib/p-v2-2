@@ -16,7 +16,7 @@ body {
 
 // Selection Styles
 ::selection {
-    color: $light-color; 
+    color: $light-color;
     background: blueviolet;
 }
 
@@ -24,15 +24,15 @@ body {
 ::-webkit-scrollbar {
     width: .5rem;
     background: $dark-color;
-    border: 1px solid $primary-color;
+    // border: 1px solid $light-color;
     cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $primary-color;
+    background: $light-color;
 
     &:hover {
-        background: darken($color: $primary-color, $amount: 4)
+        background: $light-shade-color
     }
 }
 // Main Attributes Styles
