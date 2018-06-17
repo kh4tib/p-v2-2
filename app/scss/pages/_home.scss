@@ -8,105 +8,107 @@
     position: relative;
     border: 2rem solid $dark-color;
     overflow: hidden;
+}
 
-    .one__container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $dark-shade-color, $alpha: .1);
-        background-size: 12px 12px;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        position: relative;
-        z-index: 1;
+.one__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $dark-shade-color, $alpha: .1);
+    background-size: 12px 12px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+    z-index: 1;
+}
 
-        .one__columns {
-            margin-top: 2rem;
-            display: flex;
-            width: 60%;
-            justify-content: space-between;
-            flex-wrap: wrap;
+.one__columns {
+    margin-top: 2rem;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-            .skills {
-                ul {
-                    li {
-                        cursor: default; ;
-                        img {
-                            opacity: 0;
-                            position: absolute;
-                            z-index: -3 ;
-                            bottom: 0rem;
-                            left: 0rem;
-                            transition: opacity .3s ease-in-out;
-                            pointer-events: none;
-                        }
+.skills {
+    ul {
+        li {
+            cursor: default; ;
+            img {
+                opacity: 0;
+                position: absolute;
+                z-index: -3 ;
+                bottom: 0rem;
+                left: 0rem;
+                transition: opacity .3s ease-in-out;
+                pointer-events: none;
+            }
 
-                        &:hover {
-                            img {
-                                opacity: .2;
-                            }
-                        }
-                    }
+            &:hover {
+                img {
+                    opacity: .2;
                 }
             }
-
-            .projects {
-                a {
-                    .project__description {
-                        color: $dark-shade-color;
-                        display: none;
-                    }
-    
-                    &:hover {
-                        .project__description {
-                            display: inline-block;
-                            margin-left: .5rem;
-                            position: absolute;
-                            
-                        }
-                    }
-                }
-            }
-
-            .contact {
-                width: 16rem;
-            }
-        
         }
-        .introduction,
-        .projects,
-        .skills,
-        .contact {
-            margin-top: 2rem;
-            margin-right: 2rem;
-             p {
-                margin-top: 1rem;
-                width: 50%;
-            }
+    }
+}
+
+.projects {
+    a {
+        .project__description {
+            color: $dark-shade-color;
+            display: none;
         }
 
-        .one__elements {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        &:hover {
+            .project__description {
+                display: inline-block;
+                margin-left: .5rem;
+                position: absolute;
+                
+            }
+        }
+    }
+}
+
+.contact {
+    width: 16rem;
+}
+.introduction,
+.projects,
+.skills,
+.contact {
+    margin-top: 2rem;
+    margin-right: 2rem;
+
+     p {
+        margin-top: 1rem;
+        width: 50%;
+    }
+}
+
+// Side Shapes Styles
+
+.one__elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    @for $i from 1 through 8 {
+        :nth-child(#{$i}) {
+            width: $i *12rem;
+            height: $i * 12rem;
+            transform: rotate($i * 8deg);
+            border: 2px solid $primary-color;
             position: absolute;
-            z-index: -1;
-            left: 50%;
-            @for $i from 1 through 8 {
-                :nth-child(#{$i}) {
-                    width: $i *12rem;
-                    height: $i * 12rem;
-                    transform: rotate($i * 8deg);
-                    border: 2px solid $primary-color;
-                    position: absolute;
-                    transition: 1s ease-in-out;
-                }
-            }
+            transition: 1s ease-in-out;
         }
     }
 }
@@ -117,40 +119,22 @@
 }
 
 // Media Queries
-@media only screen and (max-width:1280px) {
-    .section__one {
-        height: auto;
-
-        .one__container {
-            height: auto;
-
-            .one__columns {
-                width: 100%;
-            }
-        }
-    }
-}
-
-
 @media only screen and (max-width:1440px) {
     .section__one {
         height: auto;
+    }
 
-        .one__container {
-            height: auto;
+    .one__container {
+        height: auto;
 
-            .introduction p {
-                width: 80%;
-            }
-
-            .one__columns {
-
-                .contact,
-                .skills,
-                .projects {
-                    width: 100%;
-                }
-            }
+        .introduction p {
+            width: 80%;
         }
+    }
+
+    .contact,
+    .skills,
+    .projects {
+        width: 100%;
     }
 }

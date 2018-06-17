@@ -12,7 +12,7 @@
     (dribbble, #ea4c89,){
     
     .--project-theme-#{$theme-name} {
-        .section__one .one__container .one__elements i {
+        .one__elements i {
             border: 2px solid $color-value;
             border-radius: $radius-value;
             transform: rotate($rotation-value);
