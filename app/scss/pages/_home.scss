@@ -66,6 +66,24 @@
             }
         }
 
+        .projects {
+            a {
+                .project__description {
+                    color: $dark-shade-color;
+                    display: none;
+                }
+
+                &:hover {
+                    .project__description {
+                        display: inline-block;
+                        margin-left: .5rem;
+                        position: absolute;
+                        
+                    }
+                }
+            }
+        }
+
         .one__elements {
             width: 100%;
             height: 100%;
