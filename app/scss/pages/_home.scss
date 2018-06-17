@@ -52,6 +52,28 @@
                     }
                 }
             }
+
+            .projects {
+                a {
+                    .project__description {
+                        color: $dark-shade-color;
+                        display: none;
+                    }
+    
+                    &:hover {
+                        .project__description {
+                            display: inline-block;
+                            margin-left: .5rem;
+                            position: absolute;
+                            
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                width: 16rem;
+            }
         
         }
         .introduction,
@@ -63,24 +85,6 @@
              p {
                 margin-top: 1rem;
                 width: 50%;
-            }
-        }
-
-        .projects {
-            a {
-                .project__description {
-                    color: $dark-shade-color;
-                    display: none;
-                }
-
-                &:hover {
-                    .project__description {
-                        display: inline-block;
-                        margin-left: .5rem;
-                        position: absolute;
-                        
-                    }
-                }
             }
         }
 
@@ -113,22 +117,22 @@
 }
 
 // Media Queries
-
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1280px) {
     .section__one {
         height: auto;
 
         .one__container {
             height: auto;
 
-            .introduction p {
+            .one__columns {
                 width: 100%;
             }
         }
     }
 }
 
-@media only screen and (max-width:768px) {
+
+@media only screen and (max-width:1440px) {
     .section__one {
         height: auto;
 
@@ -136,11 +140,16 @@
             height: auto;
 
             .introduction p {
-                width: 100%;
+                width: 80%;
             }
-                
+
             .one__columns {
-                width: 100%;
+
+                .contact,
+                .skills,
+                .projects {
+                    width: 100%;
+                }
             }
         }
     }
