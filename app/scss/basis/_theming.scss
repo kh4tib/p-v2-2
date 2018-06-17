@@ -7,9 +7,9 @@
     (flow, $flow-theme-color, 15rem, 90deg),
     (sante,$sante-theme-color, 50rem, -90deg),
     (exquisite, $exquisite-theme-color, 5rem, -10deg),
-    (email, salmon, ),
-    (twitter, #1da1f2,),
-    (dribbble, #ea4c89,){
+    (email, $email-theme-color),
+    (twitter, $twitter-theme-color),
+    (dribbble, $dribbble-theme-color){
     
     .--project-theme-#{$theme-name} {
         .one__elements i {
