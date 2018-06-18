@@ -25,6 +25,11 @@
     z-index: 1;
 }
 
+.introduction {
+    opacity: 0;
+    animation: animation-opacity 1s  ease-in-out forwards 1;
+}
+
 .one__columns {
     margin-top: 2rem;
     display: flex;
@@ -34,6 +39,9 @@
 }
 
 .skills {
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards 1;
+    animation-delay: .4s;
     ul {
         li {
             cursor: default; ;
@@ -57,6 +65,9 @@
 }
 
 .projects {
+    opacity: 0;
+    animation: animation-opacity 1s   ease-in-out forwards 1;
+    animation-delay: .6s;
     a {
         .project__description {
             color: $dark-shade-color;
@@ -76,6 +87,9 @@
 
 .contact {
     width: 16rem;
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards  1;
+    animation-delay: .8s;
 }
 .introduction,
 .projects,
@@ -101,6 +115,12 @@
     position: absolute;
     z-index: -1;
     left: 50%;
+    opacity: 0;
+    animation: 
+        animation-opacity 1s ease-in-out forwards 1,
+        animation-rotation 1s ease-out forwards  1;
+    animation-delay: 1s;
+
     @for $i from 1 through 8 {
         :nth-child(#{$i}) {
             width: $i *12rem;
@@ -109,7 +129,31 @@
             border: 2px solid $primary-color;
             position: absolute;
             transition: 1s ease-in-out;
+            z-index: -#{$i};
         }
+    }
+}
+
+// Animations 
+
+@keyframes animation-opacity {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-rotation {
+    from {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(0deg);
     }
 }
 
