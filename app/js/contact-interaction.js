@@ -14,7 +14,7 @@ function contactHoverEffect(item, newContent, oldContent, theme) {
     });
 };
 
-contactHoverEffect(emailLink,'mo[at]khatib[dot]work','send me an email','--project-theme-email');
+// contactHoverEffect(emailLink,'mo[at]khatib[dot]work','send me an email','--project-theme-email');
 
 contactHoverEffect(twitterLink,'twitter.com/khatib', 'tweet me something', '--project-theme-twitter');
 
