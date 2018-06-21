@@ -1,19 +1,19 @@
 RewriteEngine on
 
 # ----------------------------------------------------------------------
-# Redirect to error Page
+# Redirect to error page
 # ----------------------------------------------------------------------
 
 ErrorDocument 404 /404.html
 
 # ----------------------------------------------------------------------
-# Redirect non-existing to error Page
+# Redirect non-existing to error page
 # ----------------------------------------------------------------------
 
-Options -MultiViews
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteBase / 
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ 404.html [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule 404.html [L]
 
 # ----------------------------------------------------------------------
 # Force https
