@@ -15,7 +15,7 @@ ErrorDocument 404 /404.html
   RewriteBase / 
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^(.*)$ http://khatib.work/404.html [R,NC,L]
+  RewriteRule http://khatib.work/404.html [R,NC,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
