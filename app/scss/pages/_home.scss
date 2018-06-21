@@ -56,9 +56,11 @@
             }
 
             &:hover {
+                color: #555;
                 img {
                     opacity: .2;
                 }
+        
             }
         }
     }
@@ -79,7 +81,6 @@
                 display: inline-block;
                 margin-left: .5rem;
                 position: absolute;
-                
             }
         }
     }
@@ -116,6 +117,7 @@
     z-index: -1;
     left: 50%;
     opacity: 0;
+    padding: inherit;
     animation: 
         animation-opacity 1s ease-in-out forwards 1,
         animation-rotation 1s ease-out forwards  1;

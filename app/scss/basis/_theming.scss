@@ -9,6 +9,7 @@
     (exquisite, $exquisite-theme-color, 5rem, -10deg),
     (email, $email-theme-color),
     (twitter, $twitter-theme-color),
+    (instagram, $instagram-theme-color),
     (dribbble, $dribbble-theme-color){
     
     .--project-theme-#{$theme-name} {
@@ -29,6 +30,10 @@
         a:hover {
             color: $color-value;
             text-decoration-color: $color-value;
+        }
+
+        ::selection {
+            background: $color-value;
         }
     }
 }

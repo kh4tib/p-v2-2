@@ -1,0 +1,39 @@
+// About Page Styles
+
+.section__about {
+    height: auto;
+    border: 2rem solid $dark-color;
+
+    .--about-back-link {
+        margin: 8rem 0 2rem 0;
+    }
+}
+
+.introduction__about {
+    height: auto;
+    width: 60%;
+    padding: 2rem 0 4rem 0;
+
+    p {
+        width: 80%;
+    }
+
+    h1:nth-child(2) {
+        width: 100%;
+    }
+    
+}
+
+
+// Media Queries
+@media only screen and (max-width:1440px) {
+    .section__one {
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .introduction__about {
+        padding-top: 0rem;
+        width: 100%;
+    }
+}
