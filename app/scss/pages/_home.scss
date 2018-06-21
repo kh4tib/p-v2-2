@@ -30,6 +30,31 @@
     animation: animation-opacity 1s  ease-in-out forwards 1;
 }
 
+.mo__link {
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 125%;
+    color: $light-color;
+    font-weight: 400;
+    display: inline;
+
+    img {
+        opacity: 0;
+        position: absolute;
+        z-index: -3 ;
+        top: 4rem;
+        left: 4rem;
+        transition: opacity .3s ease-in-out;
+        pointer-events: none;
+    }
+
+    &:hover {
+        img {
+            opacity: .2;
+        }
+    }
+}
+
 .one__columns {
     margin-top: 2rem;
     display: flex;
