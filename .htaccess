@@ -7,14 +7,15 @@ RewriteEngine on
 ErrorDocument 404 /404.html
 
 # ----------------------------------------------------------------------
-# Redirect non-existing to error page
+# Redirect non-existing to error Page
 # ----------------------------------------------------------------------
 
 <IfModule mod_rewrite.c>
-Options +FollowSymLinks
-RewriteEngine On
-RewriteBase /
-RewriteRule ^subdir/(.*)$ http:/khatib.work/404.html/ [R=301,L]
+  RewriteEngine on
+  RewriteBase / 
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule .* 404.html [L]
 </IfModule>
 
 # ----------------------------------------------------------------------
