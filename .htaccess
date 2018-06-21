@@ -9,7 +9,7 @@ ErrorDocument 404 /404.html
 RewriteBase / 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteRule ^(.*)$ /404.html [NC,L]
+RewriteRule ^ 404.html [QSA,L]
 
 # ----------------------------------------------------------------------
 # Force https
