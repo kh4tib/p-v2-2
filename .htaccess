@@ -6,7 +6,9 @@ RewriteEngine on
 
 ErrorDocument 404 404.html
 
-RewriteCond %{REQUEST_URI} ^/404$
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/404/$
 RewriteRule ^(.*)$ /404.html [L]
 
 # ----------------------------------------------------------------------
