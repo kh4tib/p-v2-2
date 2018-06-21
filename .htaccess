@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------
 RewriteEngine on
 ErrorDocument 404 /404.html
-Redirect 301 /about.html http://khatib.work/index.html
+Redirect 301 /about http://khatib.work/index.html
 # ----------------------------------------------------------------------
 # Force https
 # ----------------------------------------------------------------------
