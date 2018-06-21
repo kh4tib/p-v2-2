@@ -10,12 +10,12 @@ ErrorDocument 404 /404.html
 # Redirect non-existing to error page
 # ----------------------------------------------------------------------
 
-RewriteBase / 
-RewriteCond %{REQUEST_FILENAME} -s [OR]
-RewriteCond %{REQUEST_FILENAME} -l [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^.*$ - [NC,L]
-RewriteRule ^.*$ 404.html [NC,L]
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule ^subdir/(.*)$ http:/khatib.work/404.html/ [R=301,L]
+</IfModule>
 
 # ----------------------------------------------------------------------
 # Force https
