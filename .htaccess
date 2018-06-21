@@ -12,10 +12,12 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteBase / 
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ / [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule /404.html [L]
 </IfModule>
+
 # ----------------------------------------------------------------------
 # Force https
 # ----------------------------------------------------------------------
