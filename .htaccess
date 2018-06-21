@@ -6,10 +6,14 @@ RewriteEngine on
 
 ErrorDocument 404 /404.html
 
-RewriteBase / 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^404\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteRule ^ 404.html [QSA,L]
+RewriteRule . /404.html [L]
+</IfModule>
 
 # ----------------------------------------------------------------------
 # Force https
