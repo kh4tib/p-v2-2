@@ -4,13 +4,12 @@ RewriteEngine on
 # Redirect to Error Page
 # ----------------------------------------------------------------------
 
-ErrorDocument 404 404.html
+ErrorDocument 404 /404.html
 
-Options +SymLinksIfOwnerMatch 
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteBase / 
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /404.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^(.*)$ /404.html [NC,L]
 
 # ----------------------------------------------------------------------
 # Force https
