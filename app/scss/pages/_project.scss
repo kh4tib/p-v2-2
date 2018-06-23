@@ -30,6 +30,10 @@
     animation-delay: .8s;
 }
 
+.one__elements {
+    opacity: 1;
+    animation: none;
+}
 // Media Queries
 @media only screen and (max-width:1440px) {
 
