@@ -1,7 +1,7 @@
-var eveTarget = document.querySelector('.js-eve');
-var flowTarget = document.querySelector('.js-flow');
-var santeTarget = document.querySelector('.js-sante');
-var exquisiteTarget = document.querySelector('.js-exquisite');
+var eveTarget = document.getElementsByClassName('js-eve')[0];
+var flowTarget = document.getElementsByClassName('js-flow')[0];
+var santeTarget = document.getElementsByClassName('js-sante')[0];
+var exquisiteTarget = document.getElementsByClassName('js-exquisite')[0];
 var body = document.querySelector('body');
 
 function addTheme(target, theme) {
