@@ -1,0 +1,42 @@
+// Project Styles
+
+.--margin-top {
+    margin-top: 2rem
+}
+
+.project__introduction {
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards 1;
+    h1 {
+        width: 60%;
+    }
+}
+
+.project__role {
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards 1;
+    animation-delay: .4s;
+} 
+
+.project__cta {
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards 1;
+    animation-delay: .6s;
+} 
+
+.project__back-btn {
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards 1;
+    animation-delay: .8s;
+}
+
+// Media Queries
+@media only screen and (max-width:1440px) {
+
+    .project__introduction {
+        h1 {
+        width: 100%;
+        }
+    }
+}
+

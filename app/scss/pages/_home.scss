@@ -23,6 +23,7 @@
     padding-right: 4rem;
     position: relative;
     z-index: 1;
+    
 }
 
 .introduction {
@@ -37,6 +38,18 @@
     color: $light-color;
     font-weight: 400;
     display: inline;
+    animation: animation__mo .2s ease-in-out 4;
+    animation-delay: 8s;
+
+    @keyframes animation__mo {
+        0%, 100% {
+            color: $light-color;
+        }
+
+        50% {
+            color: $primary-color;
+        }
+    }
 
     img {
         opacity: 0;
@@ -161,29 +174,6 @@
     }
 }
 
-// Animations 
-
-@keyframes animation-opacity {
-    from {
-        opacity: 0;
-        transform: translateY(1rem);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes animation-rotation {
-    from {
-        transform: rotate(-10deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
 // Libs // Typer Styles
 .introduction h1 .cursor {
     color: $primary-color;  
@@ -191,12 +181,16 @@
 
 // Media Queries
 @media only screen and (max-width:1440px) {
+    body {
+        overflow: auto;
+    }
     .section__one {
-        height: auto;
+        height: 100%;
+        align-items: center;
     }
 
     .one__container {
-        height: auto;
+        padding: 2rem;
 
         .introduction p {
             width: 80%;
@@ -209,5 +203,12 @@
     .skills,
     .projects {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .section__one {
+        height: auto;
+        align-items: flex-start;
     }
 }

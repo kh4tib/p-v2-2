@@ -2,17 +2,15 @@
 
 .section__about {
     height: auto;
-    border: 2rem solid $dark-color;
 
     .--about-back-link {
-        margin: 8rem 0 2rem 0;
+        margin: 4rem 0 0rem 0;
     }
 }
 
-.introduction__about {
+.about__introduction {
     height: auto;
     width: 60%;
-    padding: 2rem 0 4rem 0;
 
     p {
         width: 80%;
@@ -24,16 +22,24 @@
     
 }
 
+.about__skills {
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards 1;
+    animation-delay: .4s;
+}
+
 
 // Media Queries
 @media only screen and (max-width:1440px) {
-    .section__one {
-        height: auto;
+    .section__about {
         justify-content: flex-start;
-    }
 
-    .introduction__about {
-        padding-top: 0rem;
-        width: 100%;
+        .about__introduction {
+            width: 100%;
+            
+            p {
+                width: 100%
+            }
+        }
     }
 }
