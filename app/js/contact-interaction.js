@@ -37,4 +37,4 @@ function changeText(item, newText, oldText) {
     });
 };
 
-changeText(aboutMo, "more about mo", "i'm mo");
+changeText(aboutMo, "more about me", "i'm mo");
