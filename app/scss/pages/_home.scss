@@ -31,24 +31,12 @@
     animation: animation-opacity 1s  ease-in-out forwards 1;
 }
 
-.mo__link {
-    cursor: pointer;
-    font-size: 2rem;
-    line-height: 125%;
-    color: $light-color;
-    font-weight: 400;
-    display: inline;
-    animation: animation__mo .2s ease-in-out 4;
-    animation-delay: 8s;
+.introduction__more-button {
 
-    @keyframes animation__mo {
-        0%, 100% {
-            color: $light-color;
-        }
-
-        50% {
-            color: $primary-color;
-        }
+    color: $dark-shade-color;
+    svg {
+        vertical-align: middle;
+        fill: $dark-shade-color;
     }
 
     img {
@@ -66,7 +54,21 @@
         img {
             opacity: .2;
         }
+
+        svg {
+            fill: $primary-color;
+        }
     }
+}
+
+.mo__link {
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 125%;
+    color: $light-color;
+    font-weight: 400;
+    display: inline;
+
 }
 
 .one__columns {

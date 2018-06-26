@@ -23,18 +23,3 @@ contactHoverEffect(twitterLink,'twitter.com/khatib', 'tweet me something', '--pr
 contactHoverEffect(instagramLink,'instagram.com/kh4tib', 'moments i captured', '--project-theme-instagram');
 
 contactHoverEffect(dribbbleLink,'dribbble.com/khatib', 'check my dribbble','--project-theme-dribbble');
-
-// about me link changing style on hover
-var aboutMo = document.getElementsByClassName('js-about-mo')[0];
-
-function changeText(item, newText, oldText) {
-    item.addEventListener('mouseover', function() {
-        item.innerHTML = newText;
-    });
-
-    item.addEventListener('mouseout', function(){
-        item.innerHTML = oldText;
-    });
-};
-
-changeText(aboutMo, "more about me", "i'm mo");
