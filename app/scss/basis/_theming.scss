@@ -3,14 +3,15 @@
 // Eve Theme Styles
 
 @each $theme-name, $color-value, $radius-value, $rotation-value in 
-    (eve, $eve-theme-color, 0rem, 10deg),
+    (eve, $eve-theme-color, 0rem, -15deg),
     (flow, $flow-theme-color, 15rem, 90deg),
     (sante,$sante-theme-color, 50rem, -90deg),
-    (exquisite, $exquisite-theme-color, 5rem, -10deg),
+    (exquisite, $exquisite-theme-color, 5rem, 15deg),
     (email, $email-theme-color),
     (twitter, $twitter-theme-color),
     (instagram, $instagram-theme-color),
-    (dribbble, $dribbble-theme-color){
+    (dribbble, $dribbble-theme-color),
+    (github, $github-theme-color){
     
     .--project-theme-#{$theme-name} {
         .one__elements i {

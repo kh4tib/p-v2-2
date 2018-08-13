@@ -34,6 +34,7 @@
 .introduction__more-button {
 
     color: $dark-shade-color;
+    margin-top: 1rem;
     svg {
         vertical-align: middle;
         fill: $dark-shade-color;
@@ -168,7 +169,7 @@
         :nth-child(#{$i}) {
             width: $i *12rem;
             height: $i * 12rem;
-            transform: rotate($i * 8deg);
+            transform: rotate($i * 2deg);
             border: 2px solid $primary-color;
             position: absolute;
             transition: 1s ease-in-out;
