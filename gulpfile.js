@@ -8,6 +8,8 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var pump = require('pump');
+// Handlebars Tasks
+var handlebars = require('gulp-compile-handlebars');
 
 // Build SASS
 gulp.task('build-sass', function(){
@@ -39,8 +41,22 @@ gulp.task('build-js', function (cb) {
   );
 });
 
+// Build Handlebars
+gulp.task('build-handlebars', function () {
+  var templateData = {
+	},
+	options = {
+    templates: 'app/templates',
+    partials : 'app/partials',
+  }
+	return gulp.src(['app/templates/*.hbs'])
+  .pipe(handlebars(templateData,options))
+  .pipe(rename({extname: ".html"}))
+  .pipe(gulp.dest(''));
+});
+
 // Build All
-gulp.task('build', ['build-sass', 'build-js'])
+gulp.task('build', ['build-sass', 'build-js', 'build-handlebars'])
 
 // Watchers
 gulp.task('watch', function(){
