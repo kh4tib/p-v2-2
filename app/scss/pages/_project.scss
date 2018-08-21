@@ -28,6 +28,33 @@
     opacity: 0;
     animation: animation-opacity 1s ease-in-out forwards 1;
     animation-delay: .8s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: calc(100% - 1px);
+    width: 2rem;
+    border: 1px solid $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+
+    .back__link {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 3;
+    }
+    svg {
+        fill: $primary-color;        
+    }
+
+    &:hover {
+        background-color: rgba($color: $primary-color, $alpha: .2)
+    }
 }
 
 .--animation-none {

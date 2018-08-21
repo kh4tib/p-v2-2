@@ -20,12 +20,25 @@
             transform: rotate($rotation-value);
             transition: 1s ease-in-out;
         }
+
         h4 {
             color: $color-value;
         }
 
         .introduction h1 .cursor {
             color: $color-value;
+        }
+
+        .project__back-btn {
+            border-color: $color-value;
+
+            svg {
+                fill: $color-value;
+            }
+
+            &:hover {
+                background-color: rgba($color: $color-value, $alpha: .2)
+            }
         }
 
         a:hover {
