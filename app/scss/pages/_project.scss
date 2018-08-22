@@ -1,32 +1,26 @@
 // Project Styles
-
-.--margin-top {
-    margin-top: 2rem
-}
-
-.project__introduction {
+.project__section {
     opacity: 0;
     animation: animation-opacity 1s ease-in-out forwards 1;
-    h1 {
-        width: 60%;
+    width: 40%;
+    margin-top: 4rem;
+    position: relative;
+
+    p {
+        margin-top: 2rem;
     }
-}
 
-.project__role {
-    opacity: 0;
-    animation: animation-opacity 1s ease-in-out forwards 1;
-    animation-delay: .4s;
+    img,
+    iframe {
+        width: 100%;;
+        position: relative;
+    }
 } 
 
-.project__cta {
-    opacity: 0;
-    animation: animation-opacity 1s ease-in-out forwards 1;
-    animation-delay: .6s;
-} 
-
+// Back Button
 .project__back-btn {
     opacity: 0;
-    animation: animation-opacity 1s ease-in-out forwards 1;
+    animation: animation-left 1s ease-in-out forwards 1;
     animation-delay: .8s;
     position: fixed;
     left: 0;
@@ -39,6 +33,8 @@
     justify-content: center;
     z-index: 2;
     cursor: pointer;
+    background: $dark-color;
+    opacity: 0;
 
     .back__link {
         position: absolute;
@@ -48,26 +44,44 @@
         top: 0;
         z-index: 3;
     }
+
     svg {
         fill: $primary-color;        
     }
 
     &:hover {
-        background-color: rgba($color: $primary-color, $alpha: .2)
+        background-color: rgba($color: $primary-color, $alpha: .1)
     }
+}
+
+// Modifiers
+.--margin-top-l {
+    margin-top: 4rem
+}
+
+.--margin-top-s {
+    margin-top: 2rem
 }
 
 .--animation-none {
     opacity: 1;
     animation: none;
 }
+
+.--height-auto {
+    height: auto;
+}
+
 // Media Queries
 @media only screen and (max-width:1440px) {
 
-    .project__introduction {
-        h1 {
-        width: 100%;
+    .project__section {
+        width: 60%;
+    }
+
+    @media only screen and (max-width:768px) {
+        .project__section { 
+            width: 100%;          
         }
     }
 }
-

@@ -19,8 +19,7 @@
     flex-direction: column;
     background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $dark-shade-color, $alpha: .1);
     background-size: 12px 12px;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 4rem;
     position: relative;
     z-index: 1;
     
@@ -155,8 +154,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     z-index: -1;
+    top: 0;
     left: 50%;
     opacity: 0;
     padding: inherit;
@@ -195,6 +195,7 @@
 
     .one__container {
         padding: 2rem;
+        width: 80%;
 
         .introduction p {
             width: 80%;
@@ -214,5 +215,9 @@
     .section__one {
         height: auto;
         align-items: flex-start;
+    }
+
+    .one__elements {
+        display: none;
     }
 }

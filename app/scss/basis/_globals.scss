@@ -104,3 +104,15 @@ h4 {
         transform: rotate(0deg);
     }
 }
+
+@keyframes animation-left {
+    from {
+        left: -2rem;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
