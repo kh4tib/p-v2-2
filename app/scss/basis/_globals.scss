@@ -43,7 +43,7 @@ a {
     display: block;
     text-decoration: none;
     color: $light-color;
-    transition: .3s ease-in-out;
+    @extend %transition-3;
     cursor: pointer;
 
     &:hover {
@@ -71,6 +71,7 @@ h1 {
     line-height: 125%;
     color: $light-color;
     font-weight: 400;
+    @extend %transition-3
 }
 
 h4 {
@@ -81,4 +82,5 @@ h4 {
     color: $primary-color;
     margin-bottom: 1rem;
     font-weight: 700;
+    @extend %transition-3
 }

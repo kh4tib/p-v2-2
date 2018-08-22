@@ -35,6 +35,7 @@
     cursor: pointer;
     background: $dark-color;
     opacity: 0;
+    @extend %transition-3;
 
     .back__link {
         position: absolute;
@@ -46,7 +47,8 @@
     }
 
     svg {
-        fill: $primary-color;        
+        fill: $primary-color;   
+        @extend %transition-3   
     }
 
     &:hover {

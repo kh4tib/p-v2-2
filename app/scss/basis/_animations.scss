@@ -1,5 +1,4 @@
 // Animations 
-
 @keyframes animation-opacity {
     from {
         opacity: 0;
@@ -31,4 +30,9 @@
         left: 0;
         opacity: 1;
     }
+}
+
+// Transitions
+%transition-3 {
+    transition: .3s ease-in-out; 
 }
