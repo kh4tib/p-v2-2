@@ -35,6 +35,7 @@ body {
         background: $light-shade-color
     }
 }
+
 // Main Attributes Styles
 a {
     font-size: 1rem;
@@ -80,39 +81,4 @@ h4 {
     color: $primary-color;
     margin-bottom: 1rem;
     font-weight: 700;
-}
-
-// Animations 
-
-@keyframes animation-opacity {
-    from {
-        opacity: 0;
-        transform: translateY(1rem);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes animation-rotation {
-    from {
-        transform: rotate(-10deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes animation-left {
-    from {
-        left: -2rem;
-        opacity: 0;
-    }
-
-    to {
-        left: 0;
-        opacity: 1;
-    }
 }
