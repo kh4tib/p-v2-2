@@ -179,8 +179,12 @@
 }
 
 // Libs // Typer Styles
-.introduction h1 .cursor {
-    color: $primary-color;  
+.introduction h1 {
+    font-family:'Space Mono', monospace, 'Reem Kufi', sans-serif;
+
+    &.cursor {
+        color: $primary-color;  
+    }
 }
 
 // Media Queries
