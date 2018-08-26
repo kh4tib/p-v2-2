@@ -21,7 +21,7 @@ gulp.task('build-sass', function(){
       suffix: ".min",
       extname: ".css"
     }))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css'));
 });
 
 // Build JS
@@ -48,7 +48,7 @@ gulp.task('build-handlebars', function () {
 	options = {
     templates: 'app/templates',
     partials : 'app/partials',
-  }
+  };
 	return gulp.src(['app/templates/*.hbs'])
   .pipe(handlebars(templateData,options))
   .pipe(rename({extname: ".html"}))
@@ -56,7 +56,7 @@ gulp.task('build-handlebars', function () {
 });
 
 // Build All
-gulp.task('build', ['build-sass', 'build-js', 'build-handlebars'])
+gulp.task('build', ['build-sass', 'build-js', 'build-handlebars']);
 
 // Watchers
 gulp.task('watch', function(){
