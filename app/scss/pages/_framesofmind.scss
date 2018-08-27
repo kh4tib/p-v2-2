@@ -31,7 +31,7 @@
 
         &__description {
             color: $light-color;
-            max-width: 60%;
+            width: 50%;
             line-height: 200%;
         }
     }
@@ -59,6 +59,17 @@
 }
 
 @media only screen and (max-width:768px) {
+    .fom__header {
+        .header {
+            &__title {
+                letter-spacing: .5rem;
+                margin: 0 0 4rem 0rem;
+            }
+            &__description {
+                width: 90%;
+            }
+        }
+    }
     .fom__items {
         iframe,
         img {
