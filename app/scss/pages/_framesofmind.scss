@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     background: $dark-color;
-    border: 1rem solid $primary-color;
+    // border: 1rem solid $primary-color;
 }
 
 .fom__header {
@@ -15,6 +15,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards  1;
 
     .header {
         &__title {
@@ -39,6 +41,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 0;
+    animation: animation-opacity 1s ease-in-out forwards  1;
+    animation-delay: .8s;
     
     iframe,
     img {
