@@ -7,6 +7,9 @@
     align-items: center;
     background: $dark-color;
     // border: 1rem solid $primary-color;
+    background: radial-gradient(rgba(255,255,255,0.125) 1px,transparent 1px);
+    background-size: 2rem 2rem;
+    background-position: 1rem 1rem;
 }
 
 .fom__header {

@@ -17,8 +17,9 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background:linear-gradient(90deg,$dark-color 10px,transparent 1%) center,linear-gradient($dark-color 10px,transparent 1%) center,rgba($color: $dark-shade-color, $alpha: .1);
-    background-size: 12px 12px;
+    background: radial-gradient(rgba(255,255,255,0.125) 1px,transparent 1px);
+    background-size: 2rem 2rem;
+    background-position: 1rem 1rem;
     padding: 4rem;
     position: relative;
     z-index: 1;
