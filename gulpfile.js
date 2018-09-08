@@ -49,10 +49,15 @@ gulp.task('build-handlebars', function () {
     templates: 'app/templates',
     partials : 'app/partials',
   };
-	return gulp.src(['app/templates/*.hbs'])
+	gulp.src(['app/templates/*.hbs'])
   .pipe(handlebars(templateData,options))
   .pipe(rename({extname: ".html"}))
   .pipe(gulp.dest(''));
+
+   gulp.src(['app/templates/humanly/*.hbs'])
+  .pipe(handlebars(templateData,options))
+  .pipe(rename({extname: ".html"}))
+  .pipe(gulp.dest('humanly'));
 });
 
 // Build All
