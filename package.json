@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/kh4tib/p-v2-2#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-compile-handlebars": "github:p-j/gulp-compile-handlebars",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.1",
@@ -31,7 +34,7 @@
     "gulp-cssnano": "^2.1.3",
     "gulp-rename": "^1.2.3",
     "handlebars": "^4.0.11",
-    "npm": "^6.4.0",
+    "npm": "^6.4.1",
     "pump": "^3.0.0"
   }
 }

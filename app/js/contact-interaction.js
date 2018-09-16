@@ -1,11 +1,11 @@
 // contacts column changin style on hover 
-var emailLink = document.getElementsByClassName('js-email')[0];
-var twitterLink = document.getElementsByClassName('js-twitter')[0];
-var instagramLink = document.getElementsByClassName('js-instagram')[0];
-var dribbbleLink = document.getElementsByClassName('js-dribbble')[0];
-var githubLink = document.getElementsByClassName('js-github')[0];
+let emailLink = document.getElementsByClassName('js-email')[0];
+let twitterLink = document.getElementsByClassName('js-twitter')[0];
+let instagramLink = document.getElementsByClassName('js-instagram')[0];
+let dribbbleLink = document.getElementsByClassName('js-dribbble')[0];
+let githubLink = document.getElementsByClassName('js-github')[0];
 
-function contactHoverEffect(item, newContent, oldContent, theme) {
+const contactHoverEffect = (item, newContent, oldContent, theme) => {
     item.addEventListener('mouseover', function(){
         item.innerHTML = newContent;
         body.classList.add(theme);

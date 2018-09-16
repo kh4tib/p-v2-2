@@ -5,6 +5,7 @@ var postcss      = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var rename = require("gulp-rename");
 // JS Tasks
+var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var pump = require('pump');
@@ -27,7 +28,10 @@ gulp.task('build-sass', function(){
 // Build JS
 gulp.task('build-js', function (cb) {
   pump([
-        gulp.src('app/js/**/*.js'),
+        gulp.src('app/js/**/*.js')
+        .pipe(babel({
+          presets: ['@babel/env']
+        })),
         concat('all.js'),
         uglify(),
         rename({

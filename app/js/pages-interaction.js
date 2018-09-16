@@ -1,11 +1,11 @@
-var eveTarget = document.getElementsByClassName('js-eve')[0];
-var flowTarget = document.getElementsByClassName('js-flow')[0];
-var santeTarget = document.getElementsByClassName('js-sante')[0];
-var exquisiteTarget = document.getElementsByClassName('js-exquisite')[0];
-var framesTarget = document.getElementsByClassName('js-frames')[0];
-var body = document.querySelector('body');
+let eveTarget = document.getElementsByClassName('js-eve')[0];
+let flowTarget = document.getElementsByClassName('js-flow')[0];
+let santeTarget = document.getElementsByClassName('js-sante')[0];
+let exquisiteTarget = document.getElementsByClassName('js-exquisite')[0];
+let framesTarget = document.getElementsByClassName('js-frames')[0];
+let body = document.querySelector('body');
 
-function addTheme(target, theme) {
+const addTheme = (target, theme) => {
     target.addEventListener('mouseover', function() {
         body.classList.add(theme);
     });
