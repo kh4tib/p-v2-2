@@ -74,8 +74,9 @@
 
 .one__columns {
     margin-top: 2rem;
+    width: 70%;
     display: flex;
-    width: 60%;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -108,7 +109,7 @@
     }
 }
 
-.projects {
+.projects, .experimentals {
     opacity: 0;
     animation: animation-opacity 1s   ease-in-out forwards 1;
     animation-delay: .6s;
@@ -137,7 +138,8 @@
 .introduction,
 .projects,
 .skills,
-.contact {
+.contact,
+.experimentals {
     margin-top: 2rem;
     margin-right: 2rem;
 
