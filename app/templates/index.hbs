@@ -15,6 +15,7 @@
 <body>
     <section class="section__one">
         <div class="one__container">
+            {{!-- Header --}}
             <div class="introduction">
                 <h1>
                     <span class="typer" id="main" data-words="Hey,Здрасти,مرحبا,¡Hola!,您好,नमस्ते,Hallå,Здравствуйте,こんにちは" data-colors="white" data-delay="100" data-deleteDelay="1000"></span>
@@ -33,56 +34,55 @@
                     </a> 
                 </h1>
             </div>
+            {{!-- Skills, Projects and more --}}
             <div class="one__columns">
-                    <div class="skills">
-                        <h4>skills</h4>
-                        <ul aria-label="list">
-                            <li aria-label="list-item">product design
-                                <img src="https://cdn.dribbble.com/users/501211/screenshots/2727885/music-player-800.png"/>
-                            </li>
-                            <li aria-label="list-item">experience design
-                                <img src="https://cdn.dribbble.com/users/501211/screenshots/3903459/whataboutus-gif.gif"/>
-                            </li>
-                            <li aria-label="list-item">interaction design
-                                <img src="https://cdn.dribbble.com/users/501211/screenshots/3264118/test.gif"/>
-                            </li>
-                            <li aria-label="list-item">interface design
-                                <img src="https://cdn.dribbble.com/users/501211/screenshots/3876374/untitled-1.gif"/>
-                            </li>
-                            <li aria-label="list-item">design systems
-                                <img src="https://cdn.dribbble.com/users/501211/screenshots/4000353/120517-framer-gif.gif"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="projects">
-                        <h4>projects</h4>
-                        <a href="/eve.html" class="js-eve" alt="link to eve homepage" aria-label="link">eve
-                            <div class="project__description">/ design system</div>
-                        </a>
-                        <a href="/flow.html" class="js-flow" alt="link to flow-e video overview">flow-e
-                            <div class="project__description">/ product design</div>
-                        </a>
-                        <a href="/sante.html" class="js-sante" alt="link to sante presentation on behance" aria-label="link">sante
-                            <div class="project__description">/ interaction design</div>
-                        </a>
-                        <a href="/exquisite.html" class="js-exquisite" alt="link to exquisite presentation on behance" aria-label="link">ex
-                            <div class="project__description">/ interaction design</div>
-                        </a>
-                    </div>
-
-                                     <div class="experimentals">
-                        <h4>experimentals</h4>
-                        <a href="/humanly.html" class="js-humanly" alt="link to blog page" aria-label="link">humanly
-                            <div class="project__description">/ writing</div>
-                        </a>
-                        <a href="/framesofmind.html" class="js-frames" alt="link to ui experimentans">frames of mind
-                            <div class="project__description">/ ui experiments</div>
-                        </a>
-                    </div>
-                    
-                    <div class="contact">
-                       {{> contact}}
-                    </div>
+                <div class="skills">
+                    <h4>skills</h4>
+                    <ul aria-label="list">
+                        <li aria-label="list-item">product design
+                            <img src="https://cdn.dribbble.com/users/501211/screenshots/2727885/music-player-800.png"/>
+                        </li>
+                        <li aria-label="list-item">experience design
+                            <img src="https://cdn.dribbble.com/users/501211/screenshots/3903459/whataboutus-gif.gif"/>
+                        </li>
+                        <li aria-label="list-item">interaction design
+                            <img src="https://cdn.dribbble.com/users/501211/screenshots/3264118/test.gif"/>
+                        </li>
+                        <li aria-label="list-item">interface design
+                            <img src="https://cdn.dribbble.com/users/501211/screenshots/3876374/untitled-1.gif"/>
+                        </li>
+                        <li aria-label="list-item">design systems
+                            <img src="https://cdn.dribbble.com/users/501211/screenshots/4000353/120517-framer-gif.gif"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="projects">
+                    <h4>projects</h4>
+                    <a href="/eve.html" class="js-eve" alt="link to eve homepage" aria-label="link">eve
+                        <div class="project__description">/ design system</div>
+                    </a>
+                    <a href="/flow.html" class="js-flow" alt="link to flow-e video overview">flow-e
+                        <div class="project__description">/ product design</div>
+                    </a>
+                    <a href="/sante.html" class="js-sante" alt="link to sante presentation on behance" aria-label="link">sante
+                        <div class="project__description">/ interaction design</div>
+                    </a>
+                    <a href="/exquisite.html" class="js-exquisite" alt="link to exquisite presentation on behance" aria-label="link">ex
+                        <div class="project__description">/ interaction design</div>
+                    </a>
+                </div>
+                <div class="experimentals">
+                    <h4>experimentals</h4>
+                    <a href="/humanly.html" class="js-humanly" alt="link to blog page" aria-label="link">humanly
+                        <div class="project__description">/ writing</div>
+                    </a>
+                    <a href="/framesofmind.html" class="js-frames" alt="link to ui experimentans">frames of mind
+                        <div class="project__description">/ ui</div>
+                    </a>
+                </div>
+                <div class="contact">
+                    {{> contact}}
+                </div>
             </div>
             {{!-- Side Shapes Animation --}}
             <div class="one__elements">

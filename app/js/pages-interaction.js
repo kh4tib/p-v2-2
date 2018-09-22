@@ -3,6 +3,7 @@ let flowTarget = document.getElementsByClassName('js-flow')[0];
 let santeTarget = document.getElementsByClassName('js-sante')[0];
 let exquisiteTarget = document.getElementsByClassName('js-exquisite')[0];
 let framesTarget = document.getElementsByClassName('js-frames')[0];
+let humanlyTarget = document.getElementsByClassName('js-humanly')[0];
 let body = document.querySelector('body');
 
 const addTheme = (target, theme) => {
@@ -20,3 +21,4 @@ addTheme(flowTarget, '--project-theme-flow');
 addTheme(santeTarget, '--project-theme-sante');
 addTheme(exquisiteTarget, '--project-theme-exquisite');
 addTheme(framesTarget, '--project-theme-frames');
+addTheme(humanlyTarget, '--project-theme-humanly');
