@@ -4,9 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $dark-color;
     position: relative;
-    border: 2rem solid $dark-color;
+    border: 2rem solid transparent;
     overflow: hidden;
 }
 
