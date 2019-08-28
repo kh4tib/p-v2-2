@@ -13,7 +13,8 @@
     (twitter, $twitter-theme-color),
     (instagram, $instagram-theme-color),
     (dribbble, $dribbble-theme-color),
-    (github, $github-theme-color){
+    (github, $github-theme-color),
+    (readings, $readings-theme-color, 2rem, 80deg){
     
     .--project-theme-#{$theme-name} {
         .one__elements i {
