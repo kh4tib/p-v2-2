@@ -172,4 +172,15 @@
     .post__body {
         width: 100%;
     }
+
+    .post__header__title {
+        font-size: 2rem;
+        line-height: 1;
+        text-shadow: -2px 2px 0px rgba($color: $secondary-color, $alpha: 1.0);;
+    }
+    
+    .post__header__description {
+        font-size: 1.125rem;
+        line-height: 2;
+    }
 }
