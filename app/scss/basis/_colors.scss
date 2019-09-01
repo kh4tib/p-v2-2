@@ -3,8 +3,12 @@ $primary-color: slateblue;
 $secondary-color: salmon;
 $dark-color: #161616;
 $dark-shade-color: #bdbdbd;
-$light-color:#fff;
+$light-color:#ffffff;
 $light-shade-color: #e0e0e0;
+
+// Gradient Variables
+$light-dotted-page: radial-gradient(rgba(255,255,255,0.125) 1px,transparent 1px);
+$dark-dotted-page: radial-gradient(rgba(0,0,0,0.125) 1px,transparent 1px);
 
 // Theming Colors
 $eve-theme-color: #2156ff;
@@ -19,3 +23,4 @@ $dribbble-theme-color: #ea4c89;
 $email-theme-color: salmon;
 $github-theme-color: #4078c0;
 $readings-theme-color: #40E0D0;
+

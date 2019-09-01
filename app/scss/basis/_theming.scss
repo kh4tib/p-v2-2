@@ -54,3 +54,55 @@
         }
     }
 }
+
+body.light-mode {
+    .section__one {
+        background: $light-color !important;
+    }
+
+    .one__container {
+        background: $dark-dotted-page;
+        background-size: 2rem 2rem;
+        background-position: 1rem 1rem;
+
+    }
+
+    a {
+        color: $dark-color;
+    }
+    
+    li, ul {
+        color: $dark-color;
+    }
+    
+    p {
+        color: $dark-color;
+    }
+    
+    h1 {
+        color: $dark-color;
+    }
+
+    .typer {
+        color: $dark-color;
+    }
+    .toggle__switch {
+        background: rgba($dark-color, $alpha: 0.2);
+    }
+    .switch__cover {
+        right: 34px;
+        background: $light-color;
+    }
+
+    .posts__post {
+        &:hover {
+            background: $light-color;
+        }
+    }
+
+    .header__details {
+        h1 {
+            color: $light-color;
+        }
+    }
+}

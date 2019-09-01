@@ -1,13 +1,13 @@
-.section__post {
-    width: calc( 100% - 8rem );
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 4rem;
-    background: radial-gradient(rgba(255,255,255,0.125) 1px,transparent 1px);
-    background-size: 2rem 2rem;
-    background-position: 1rem 1rem;
-}
+// .section__post {
+//     width: calc( 100% - 8rem );
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 4rem;
+//     background: radial-gradient(rgba(255,255,255,0.125) 1px,transparent 1px);
+//     background-size: 2rem 2rem;
+//     background-position: 1rem 1rem;
+// }
 
 // Post Header
 .post__header {
@@ -29,7 +29,7 @@
     font-size: 4rem;
     line-height: 4rem;
     font-weight: 700;
-    color: $primary-color;
+    color: $primary-color !important;
     text-shadow: -4px 4px 0px rgba($color: $secondary-color, $alpha: 1.0);;
     margin-bottom: 2rem;
 }
@@ -152,7 +152,7 @@
 .body__title {
     font-size: 2rem;
     font-weight: 700;
-    color: $primary-color;
+    color: $primary-color !important;
     margin: 2rem 0 1rem 0;
 }
 

@@ -33,7 +33,7 @@
     justify-content: center;
     z-index: 2;
     cursor: pointer;
-    background: $dark-color;
+    // background: $dark-color;
     opacity: 0;
     @extend %transition-3;
 
@@ -64,6 +64,10 @@
 
 .--height-auto {
     height: auto;
+}
+
+.--align-center {
+    align-items: center;
 }
 
 // Media Queries

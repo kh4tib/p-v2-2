@@ -17,59 +17,63 @@
 </head>
 <body>
     {{> post-back-button}} 
-    <section class="section__post">
-        {{!-- Header --}}
-        <div class="post__header">
-            <div class="post__header__details">
-                <h1 class="post__header__title">twenty18 retrospective</h1>
-                <p class="post__header__description">It took me some time to get this post together. I was trying to structure my thoughts and see how 2018 went, what I achieved in it, and how it will reflect on 2019.</p>
-                <div class="post__header__author">
-                    <div class="author__image">
-                        <img src="" alt="">
+    <section class="section__one --height-auto">
+        <div class="one__container --align-center">
+            {{> toggle-switch}}
+            {{!-- Header --}}
+            <div class="post__header">
+                <div class="post__header__details">
+                    <h1 class="post__header__title">twenty18 retrospective</h1>
+                    <p class="post__header__description">It took me some time to get this post together. I was trying to structure my thoughts and see how 2018 went, what I achieved in it, and how it will reflect on 2019.</p>
+                    <div class="post__header__author">
+                        <div class="author__image">
+                            <img src="" alt="">
+                        </div>
+                        <p class="author__name">Mo</p>
                     </div>
-                    <p class="author__name">Mo</p>
+                    <p class="post__header__date">February 10, 2019</p>
                 </div>
-                <p class="post__header__date">February 10, 2019</p>
             </div>
-        </div>
-        {{!-- Body --}}
-        <div class="post__body">
-             
-            <div class="post__image">
-            <img src="https://media.giphy.com/media/1wPAqSWsoZdz3qY6eA/giphy.gif" alt="experimenter in the lab">
-            <p>experimenter // via giphy</p>
-            </div>                              
-        
-            <p class="--margin-top-l">
-            <span class="body__dropCap">L</span>et's get into it. At the beginning of 2018, I continued experimenting with different design tools, something which I started back in 2017. But this time it was more focused on user interfaces. In the beginning, I was experimenting with various design tools like Sketch, Figma, and Framer. Later on, I moved more into the development side of the process. I had some knowledge from this phase but wanted to really get more comfortable with it. I tried to develop more interfaces and understand how I would transform them into code. But yeah, in the end, I was experimenting in another design tool which was HTML, CSS and the interactive part of JavaScript.</p>
-
-            <div class="body__quote">
-                <div class="body__quote__description">
-                <span class="body__dropCap">I</span> love designing, but I'm happiest in a code editor.</div> 
-                <h4>Tim Van Damme in a tweet</h4>
-            </div> 
-
-            <p class="--margin-top-l">
-            These experiments helped develop the way I think about designing solutions. Which lead to building <a href="https://kanbanize.github.io/eve" class="body__link" target="_blank">my first design system</a>. Working on this design system helped me a lot in breaking down user interfaces. Understand more their structure and layout. How to create more usable and accessible interfaces. In addition, to understand how to communicate better with developers. And more importantly to think in components, not only in buttons and text-inputs but breaking the whole solution into small components. More on this in another post - Hopefully.</p>
+            {{!-- Body --}}
+            <div class="post__body">
+                
+                <div class="post__image">
+                <img src="https://media.giphy.com/media/1wPAqSWsoZdz3qY6eA/giphy.gif" alt="experimenter in the lab">
+                <p>experimenter // via giphy</p>
+                </div>                              
             
-            <p class="--margin-top-l"> 
-            <span class="body__dropCap">2018</span> I developed in various design tools. Focused more on the solution and how I can build it. Doing this helped me understand my strength and weaknesses. This year I'm going to focus more on an earlier part of the process. </br>The problem.</p>
+                <p class="--margin-top-l">
+                <span class="body__dropCap">L</span>et's get into it. At the beginning of 2018, I continued experimenting with different design tools, something which I started back in 2017. But this time it was more focused on user interfaces. In the beginning, I was experimenting with various design tools like Sketch, Figma, and Framer. Later on, I moved more into the development side of the process. I had some knowledge from this phase but wanted to really get more comfortable with it. I tried to develop more interfaces and understand how I would transform them into code. But yeah, in the end, I was experimenting in another design tool which was HTML, CSS and the interactive part of JavaScript.</p>
 
-            <div class="post__image">
-            <img src="https://media.giphy.com/media/3o6ZsUJ44ffpnAW7Dy/giphy.gif" alt="patrick stewart going cheers gif">
-            <p>cheers! // via giphy</p>
-            </div> 
+                <div class="body__quote">
+                    <div class="body__quote__description">
+                    <span class="body__dropCap">I</span> love designing, but I'm happiest in a code editor.</div> 
+                    <h4>Tim Van Damme in a tweet</h4>
+                </div> 
 
-            <p class="--margin-top-l"> 
-            I know, it's a short one. I needed to start somewhere. I was planning to write more. But every time I sit to do so. I overwhelm myself and end up writing nothing. This one is a new fresh start. Cheers! 
-            </p>
-            <div class="body__contact">
-                {{> contact}}
+                <p class="--margin-top-l">
+                These experiments helped develop the way I think about designing solutions. Which lead to building <a href="https://kanbanize.github.io/eve" class="body__link" target="_blank">my first design system</a>. Working on this design system helped me a lot in breaking down user interfaces. Understand more their structure and layout. How to create more usable and accessible interfaces. In addition, to understand how to communicate better with developers. And more importantly to think in components, not only in buttons and text-inputs but breaking the whole solution into small components. More on this in another post - Hopefully.</p>
+                
+                <p class="--margin-top-l"> 
+                <span class="body__dropCap">2018</span> I developed in various design tools. Focused more on the solution and how I can build it. Doing this helped me understand my strength and weaknesses. This year I'm going to focus more on an earlier part of the process. </br>The problem.</p>
+
+                <div class="post__image">
+                <img src="https://media.giphy.com/media/3o6ZsUJ44ffpnAW7Dy/giphy.gif" alt="patrick stewart going cheers gif">
+                <p>cheers! // via giphy</p>
+                </div> 
+
+                <p class="--margin-top-l"> 
+                I know, it's a short one. I needed to start somewhere. I was planning to write more. But every time I sit to do so. I overwhelm myself and end up writing nothing. This one is a new fresh start. Cheers! 
+                </p>
+                <div class="body__contact">
+                    {{> contact}}
+                </div>
+
+
             </div>
-
-
         </div>
     </section>    
+<script src="../dist/js/toggle-modes.js"></script>
 <script src="../dist/js/main.min.js"></script>
 </body>
 </html>

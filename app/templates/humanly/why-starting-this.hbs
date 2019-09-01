@@ -17,54 +17,56 @@
 </head>
 <body>
     {{> post-back-button}} 
-    <section class="section__post">
-        {{!-- Header --}}
-        <div class="post__header">
-            <div class="post__header__details">
-                <h1 class="post__header__title">why starting this?</h1>
-                <p class="post__header__description">i need to learn how to write</p>
-                <div class="post__header__author">
-                    <div class="author__image">
-                        <img src="" alt="">
+    <section class="section__one --height-auto">
+        <div class="one__container --align-center">
+            {{!-- Header --}}
+            <div class="post__header">
+                <div class="post__header__details">
+                    <h1 class="post__header__title">why starting this?</h1>
+                    <p class="post__header__description">i need to learn how to write</p>
+                    <div class="post__header__author">
+                        <div class="author__image">
+                            <img src="" alt="">
+                        </div>
+                        <p class="author__name">Mo</p>
                     </div>
-                    <p class="author__name">Mo</p>
+                    <p class="post__header__date">September 21, 2018</p>
                 </div>
-                <p class="post__header__date">September 21, 2018</p>
             </div>
-        </div>
-        {{!-- Body --}}
-        <div class="post__body">
-            <p><span class="body__dropCap">H</span>ey there, and welcome to my tiny little "experimental blog". Well, answering the title's question, I'm starting this little experiment to get better at writing.</p>
+            {{!-- Body --}}
+            <div class="post__body">
+                <p><span class="body__dropCap">H</span>ey there, and welcome to my tiny little "experimental blog". Well, answering the title's question, I'm starting this little experiment to get better at writing.</p>
+                
+                <div class="post__image">
+                <img src="https://media.giphy.com/media/3ohhworAhxSEHT3zDa/giphy.gif" alt="Scientist in a lab gif">
+                <p>A big fan of dropping meaningless gifs // via giphy</p>
+                </div>
+
+                <p>What I recognized from the latest experimental projects that I did, was that I don't write much about the process I pass through to come with a specific solution, I just post the solution itself and that's it. Which doesn't give the full image of the solution, and it doesn't explain why I believe that this solution would reflect the best outcome for the product. All these questions started to come on my mind when I was putting together a new portfolio, that has dedicated pages for various projects, and all that I added in these pages was the name of the project and a link to a graphical presentation, okay but where is the process of this, how I came to this design solutions. Here when  I found that there's a problem, and I'm not presenting my work the right way.</p>
+                                    
             
-            <div class="post__image">
-            <img src="https://media.giphy.com/media/3ohhworAhxSEHT3zDa/giphy.gif" alt="Scientist in a lab gif">
-            <p>A big fan of dropping meaningless gifs // via giphy</p>
-            </div>
+                <p class="--margin-top-l">
+                <span class="body__dropCap">A</span>sking myself why I'm not writing much about it, I came up with answers such as; I lack writing skills, or I got into the trap of thinking that posting images of the design solutions is enough, that if we want to talk only about presenting work, and not sharing knowledge, because oh snap! I don't do this too!</p>
 
-            <p>What I recognized from the latest experimental projects that I did, was that I don't write much about the process I pass through to come with a specific solution, I just post the solution itself and that's it. Which doesn't give the full image of the solution, and it doesn't explain why I believe that this solution would reflect the best outcome for the product. All these questions started to come on my mind when I was putting together a new portfolio, that has dedicated pages for various projects, and all that I added in these pages was the name of the project and a link to a graphical presentation, okay but where is the process of this, how I came to this design solutions. Here when  I found that there's a problem, and I'm not presenting my work the right way.</p>
-                                
-        
-            <p class="--margin-top-l">
-            <span class="body__dropCap">A</span>sking myself why I'm not writing much about it, I came up with answers such as; I lack writing skills, or I got into the trap of thinking that posting images of the design solutions is enough, that if we want to talk only about presenting work, and not sharing knowledge, because oh snap! I don't do this too!</p>
+                <p class="--margin-top-l">I have this feeling that I'm sharing a lot of images but not much of thoughts, and to be honest I don't know how I came to this place, and I feel that I will come over this by starting this "experimental blog", writing more about my process, and sharing more knowledge and learning on the way.</p>                 
+            
+                <div class="body__quote">
+                    <div class="body__quote__description">
+                    <span class="body__dropCap">I</span>t ain't no fun if the homies can't have none.</div> 
+                    <h4>Snoop Dogg</h4>
+                </div> 
 
-            <p class="--margin-top-l">I have this feeling that I'm sharing a lot of images but not much of thoughts, and to be honest I don't know how I came to this place, and I feel that I will come over this by starting this "experimental blog", writing more about my process, and sharing more knowledge and learning on the way.</p>                 
-        
-            <div class="body__quote">
-                <div class="body__quote__description">
-                <span class="body__dropCap">I</span>t ain't no fun if the homies can't have none.</div> 
-                <h4>Snoop Dogg</h4>
-            </div> 
+                <div class="post__image">
+                    <img src="https://media.giphy.com/media/Kzvsru1JqQg4E/giphy.gif" alt="Snoop-dog gif animation">
+                    <p>Scoopty-whoop // via giphy</p>
+                </div>
 
-            <div class="post__image">
-                <img src="https://media.giphy.com/media/Kzvsru1JqQg4E/giphy.gif" alt="Snoop-dog gif animation">
-                <p>Scoopty-whoop // via giphy</p>
-            </div>
+                <h1 class="body__title">And here comes the why.</h1>
+                <p>To share my thoughts as a human on human interface design, plus various other matters that are related in a way or another.</p>
 
-            <h1 class="body__title">And here comes the why.</h1>
-            <p>To share my thoughts as a human on human interface design, plus various other matters that are related in a way or another.</p>
-
-            <div class="body__contact">
-                {{> contact}}
+                <div class="body__contact">
+                    {{> contact}}
+                </div>
             </div>
         </div>
     </section>    
