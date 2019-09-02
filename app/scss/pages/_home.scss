@@ -178,10 +178,12 @@ html {
             width: $i *12rem;
             height: $i * 12rem;
             transform: rotate($i * 2deg);
-            border: 2px solid $primary-color;
+            // border: 2px solid $primary-color;
+            background: rgba($primary-color, $alpha: 0.1);
             position: absolute;
             transition: 1s ease-in-out;
             z-index: -#{$i};
+            box-shadow: 0 8px 32px -1px rgba(0, 0, 0, .5);
         }
     }
 }
@@ -215,6 +217,12 @@ html {
     bottom: 1.75rem;
     z-index: 999;
     transform: rotate(90deg);
+    transition: ease-in-out .4s;
+
+    &:hover {
+        background: rgba($light-color, $alpha: 0.2);
+        transition: ease-in-out .4s;
+    }
 
 
     .switch__cover {

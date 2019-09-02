@@ -15,10 +15,6 @@ body {
 }
 
 // Selection Styles
-::selection {
-    color: $light-color;
-    background: blueviolet;
-}
 
 // Scroll Styles
 ::-webkit-scrollbar {

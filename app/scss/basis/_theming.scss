@@ -19,7 +19,8 @@
     .--project-theme-#{$theme-name},
     #--project-theme-#{$theme-name} {
         .one__elements i {
-            border: 2px solid $color-value;
+            // border: 2px solid $color-value;
+            background: rgba($color-value, $alpha: 0.1);
             border-radius: $radius-value;
             transform: rotate($rotation-value);
             transition: 1s ease-in-out;
@@ -34,14 +35,14 @@
         }
 
         .project__back-btn {
-            border-color: $color-value;
+            background: rgba($color: $color-value, $alpha: .1);
 
             svg {
                 fill: $color-value;
             }
 
             &:hover {
-                background-color: rgba($color: $color-value, $alpha: .1)
+                background-color: rgba($color: $color-value, $alpha: .2)
             }
         }
 
