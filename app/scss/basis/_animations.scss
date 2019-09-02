@@ -32,6 +32,17 @@
     }
 }
 
+@keyframes animation-right {
+    from {
+        left: 2rem;
+        opacity: 0;
+    }
+
+    to {
+        left: 0rem;
+        opacity: 1;
+    }
+}
 // Transitions
 %transition-3 {
     transition: .3s ease-in-out; 

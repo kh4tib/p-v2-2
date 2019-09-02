@@ -20,22 +20,23 @@
 // Back Button
 .project__back-btn {
     opacity: 0;
-    animation: animation-left 1s ease-in-out forwards 1;
+    animation: animation-right 1s ease-in-out forwards 1;
     animation-delay: .8s;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: calc(100% - 1px);
-    width: 2rem;
-    border-right: 1px solid $primary-color;
+    position: relative;
+    left: 8rem;
+    top: 0rem;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
     cursor: pointer;
-    // background: $dark-color;
+    background: rgba($color: $primary-color, $alpha: .1);
     opacity: 0;
     @extend %transition-3;
+    align-self: flex-start;
 
     .back__link {
         position: absolute;
