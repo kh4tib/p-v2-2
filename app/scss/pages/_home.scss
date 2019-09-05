@@ -26,7 +26,7 @@ html {
     background: $light-dotted-page;
     background-size: 2rem 2rem;
     background-position: 1rem 1rem;
-    padding: 4rem;
+    padding: 1rem 2rem;
     position: relative;
     z-index: 1;
 }
@@ -219,6 +219,11 @@ html {
     transform: rotate(90deg);
     transition: ease-in-out .4s;
 
+    
+    @media only screen and (max-width:768px) {
+        display: none;          
+    }
+
     &:hover {
         background: rgba($light-color, $alpha: 0.2);
         transition: ease-in-out .4s;
@@ -247,15 +252,6 @@ html {
         height: 100%;
         align-items: center;
     }
-
-    .one__container {
-        padding: 2rem;
-        width: 80%;
-
-        .introduction p {
-            width: 80%;
-        }
-    }
     .one__columns {
             width: 100%;
     }
@@ -270,6 +266,10 @@ html {
     .section__one {
         height: auto;
         align-items: flex-start;
+    }
+
+    .one__container {
+        padding: 2rem 0;
     }
 
     .one__elements {

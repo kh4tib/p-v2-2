@@ -12,8 +12,9 @@
 // Post Header
 .post__header {
     height: auto;
-    width: 80%;
-    margin: 8rem 0 2rem 0;
+    width: 100%;
+    margin: 8rem 0 0 0;
+    padding-top: 2rem;
     animation: animation-opacity 1s ease-in-out forwards 1;
 }
 
@@ -101,7 +102,6 @@
     color: $primary-color;
     float: left;
     padding-right: 1rem;
-    margin-left: 1rem;
     margin-top: 0rem; 
     text-shadow: -8px 8px 0px rgba($color: $secondary-color, $alpha: 1.0);
 }
@@ -166,6 +166,9 @@
 
 // MediaQueries
 @media only screen and (max-width:960px) {
+    .post__header {
+        margin: 0;
+    }
     .post__header__description {
         width: 100%;
     }

@@ -11,13 +11,13 @@
 // }
 
 .humanly__header {
-    width: calc( 100% + 4rem );
+    width: 100%;
     height: 32rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    // top: -2rem;
+    top: 2rem;
     overflow: hidden;
     // background: $primary-color
     animation: animation-opacity 1s ease-in-out forwards  1;
