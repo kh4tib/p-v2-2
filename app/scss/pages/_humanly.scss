@@ -131,7 +131,7 @@
 
 .post__card__image {
     width: 100%;
-    height: 60%;
+    height: 70%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -148,7 +148,7 @@
 
 .post__details {
     position: relative;
-    height: 40%;
+    height: 30%;
     display: flex;
     flex-direction: column;;
     align-items: center;
@@ -191,8 +191,8 @@
             width: 100%;
             height: 24rem;
             margin: 2rem 0;
-            display: flex;
-            flex-direction: row;
+            // display: flex;
+            // flex-direction: row;
 
             // &:first-child,
             // &:nth-child(even):last-child{
@@ -202,19 +202,19 @@
             // }
         }
         .post__card__image {
-            width: 50%;
-            height: 100%;
+            width: 100%;
+            height: 70%;
             overflow: hidden;
 
             img {
-                height: 100%;
+                width: 100%;
                 position: absolute;
             }
         }
 
         .post__details {
-            width: 50%;
-            height: 40%;
+            width: 100%;
+            height: 30%;
 
             h1 {
                 font-size: 1rem;
