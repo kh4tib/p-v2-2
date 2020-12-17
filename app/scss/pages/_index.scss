@@ -1,0 +1,124 @@
+.introduction__actions {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.introduction__icon {
+    font-size: 1.25rem;
+    position: relative;
+    top: 0.25rem;
+}
+.action__button {
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    background-color: rgba($color: $primary-color, $alpha: 1);
+    color: $light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    border: 2px solid transparent;
+
+    :last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        box-shadow: -8px 8px 0px rgba($color: $secondary-color, $alpha: 1);
+        border: 2px solid $dark-color;
+    }
+
+    img {
+        opacity: 0;
+        position: absolute;
+        z-index: -3;
+        top: 4rem;
+        left: 4rem;
+        transition: opacity .3s ease-in-out;
+        pointer-events: none;
+    }
+
+
+    &:hover {
+        img {
+            opacity: .2;
+        }
+
+        svg {
+            fill: $primary-color;
+        }
+    }
+}
+
+.skills {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        h1 {
+            cursor: default;
+            margin-right: 1rem;
+            img {
+                opacity: 0;
+                position: absolute;
+                z-index: -3;
+                left: 8rem;
+                bottom: 2rem;
+                transition: opacity .3s ease-in-out;
+                pointer-events: none;
+            }
+
+            &:hover {
+                color: #555;
+
+                img {
+                    opacity: .2;
+                }
+
+            }
+        }
+    }
+}
+
+// Libs // Typer Styles
+.introduction h1 {
+    font-family: 'Space Mono', monospace, 'Reem Kufi', sans-serif;
+
+    .cursor {
+        color: $primary-color;
+    }
+}
+
+.typer {
+    color: $light-color;
+}
+
+
+.projects {
+    .humanly__card {
+        border-color: $primary-color;
+    }
+}
+
+.projects__header {
+    display: flex;
+    align-items: center;
+
+    div {
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, rgba($color: $primary-color, $alpha: 1) 0%, rgba($color: $primary-color, $alpha: 0) 100%);
+        margin-left: 1rem;
+        border-radius: 1rem;
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+}

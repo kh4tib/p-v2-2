@@ -1,87 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>mo // design system // eve</title>
-<meta name="description" content="eve provides basic ui elements, flexbox based responsive interface system.">
-<meta name="twitter:title" content="mo // design system // eve">
-<meta name="twitter:description" content="eve provides basic ui elements, flexbox based responsive interface system.">
-<meta itemprop="name" content="mo // design system // eve">
-<meta itemprop="description" content="eve provides basic ui elements, flexbox based responsive interface system.">
-<meta property="og:title" content="mo // design system // eve">
-<meta property="og:description" content="eve provides basic ui elements, flexbox based responsive interface system.">
-<meta property='og:url' content='http://khatib.work/eve.html'/>
-<meta charset="UTF-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<link rel="canonical" href="http://khatib.work">
-<meta name="author" content="Mo Khatib">
-<meta name="robots" content="all">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@khatib">
-<meta name="twitter:creator" content="@khatib">
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://khatib.work">
-<meta name="keywords" content="Mo Khatib, Khatib, Mo, Moh'd Khatib, Product Designer, Product Design, Designer, Sofia, Bulgaria, UX, Experience Design, UI, Interface Design, Interaction Design, Web Designer, Sketch, Figma, Framer, Europe, Amesterdam, Dubai, Frontend Design, CSS, HTML, SASS, JavaScript, Media, Componenets, Systems, Interactive, Interaction, Creative, Design Systems, Visual, Online, Experience, Application, Mobile, Marketing, Portfolio, Front-end Development, Human-centered Design, Design Thinking, Prototyping, Layout, User Research, User Journeys, Prototyping, Startup, User Testing, Usability, Usability Testing, Wireframing, User Experience Design, User Interface Design, Human Interface Design, Responsive Design, Usable, Usable Design, user-friendly, User-Friendly Design, UX Designer, UI Designer, Experience Designer, Design System Designers">
-<link rel="icon" type="image/png" sizes="48x48" href="../app/images/fav/favicon-48x48.png">
-<link rel="shortcut icon" href="../app/images/fav/favicon-120x120.png">
-<meta name="theme-color" content="#161616">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100822094-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-100822094-1');
-</script>
-<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Space+Mono:400,700" rel="stylesheet">
-<link rel="stylesheet" href="dist/css/style.min.css">
+    <title>mo // design system // eve</title>
+    <meta name="description" content="eve provides basic ui elements, flexbox based responsive interface system.">
+    <meta name="twitter:title" content="mo // design system // eve">
+    <meta name="twitter:description"
+        content="eve provides basic ui elements, flexbox based responsive interface system.">
+    <meta itemprop="name" content="mo // design system // eve">
+    <meta itemprop="description" content="eve provides basic ui elements, flexbox based responsive interface system.">
+    <meta property="og:title" content="mo // design system // eve">
+    <meta property="og:description"
+        content="eve provides basic ui elements, flexbox based responsive interface system.">
+    <meta property='og:url' content='http://khatib.work/eve.html' />
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="canonical" href="http://khatib.work">
+    <meta name="author" content="Mo Khatib">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@khatib">
+    <meta name="twitter:creator" content="@khatib">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://khatib.work">
+    <meta name="keywords" content="Mo Khatib, Khatib, Mo, Moh'd Khatib, Product Designer, Product Design, Designer, Sofia, Bulgaria, UX, Experience Design, UI, Interface Design, Interaction Design, Web Designer, Sketch, Figma, Framer, Europe, Amesterdam, Dubai, Frontend Design, CSS, HTML, SASS, JavaScript, Media, Componenets, Systems, Interactive, Interaction, Creative, Design Systems, Visual, Online, Experience, Application, Mobile, Marketing, Portfolio, Front-end Development, Human-centered Design, Design Thinking, Prototyping, Layout, User Research, User Journeys, Prototyping, Startup, User Testing, Usability, Usability Testing, Wireframing, User Experience Design, User Interface Design, Human Interface Design, Responsive Design, Usable, Usable Design, user-friendly, User-Friendly Design, UX Designer, UI Designer, Experience Designer, Design System Designers">
+    <link rel="icon" type="image/png" sizes="48x48" href="../app/images/fav/favicon-48x48.png">
+    <link rel="shortcut icon" href="../app/images/fav/favicon-120x120.png">
+    <meta name="theme-color" content="#161616">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100822094-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-100822094-1');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Space+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
+
 <body id="--project-theme-eve">
 
-    <section class="section__one section__project --height-auto">
-           <div class="one__container project__container">
-            <div class="project__back-btn">
-                <a  href="http://khatib.work/index.html" class="back__link"></a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 11H6.83l2.88-2.88c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L3.71 11.3c-.39.39-.39 1.02 0 1.41L8.3 17.3c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L6.83 13H20c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
-                </a>
-            </div>            <div class="toggle__switch">
-                <div class="switch__cover"></div>
-                <div class="switch__dark">🌙</div>
-                <div class="switch__light">☀️</div>
-            </div>            <div class="project__section">
-                <h4>project 01 // eve // design system</h4>
-                <h1>eve provides basic user interface elements, flexbox based responsive interfaces, pure css components with best practice coding and a consistent design system.</h1>
+    <section class="section__one">
+        <div class="one__container">
+            <div class="top__options">
+                <div class="project__back-btn">
+                    <a  href="http://khatib.work/index.html" class="back__link"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 11H6.83l2.88-2.88c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L3.71 11.3c-.39.39-.39 1.02 0 1.41L8.3 17.3c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L6.83 13H20c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
+                    </a>
+                </div>                <div class="toggle__switch">
+                    <div class="switch__cover"></div>
+                    <div class="switch__dark">🌙</div>
+                    <div class="switch__light">☀️</div>
+                </div>            </div>
+            <div class="project__section">
+                <h4>eve // design system</h4>
+                <h1>eve provides basic user interface elements, flexbox based responsive interfaces, pure css components
+                    with best practice coding and a consistent design system.</h1>
             </div>
             <div class="project__section">
-            <h4>role</h4>
+                <h4>role</h4>
                 <h1>product _ experience designer // interface designer // component _ system designer</h1>
-                <p>Started this as a Sketch Library, then after sharing the way it works with the front-end developer, we decided to continue the same theory on the production front-end code base of the product.</p>
+                <p>Started this as a Sketch Library, then after sharing the way it works with the front-end developer,
+                    we decided to continue the same theory on the production front-end code base of the product.</p>
             </div>
             <div class="project__section ">
-            <h4>WHY did WE decide TO CREATE OUR OWN DESIGN SYSTEM?</h4>
-                <p>Most of the design systems and frameworks available now offer a variety of design solutions and thousands of components that we wouldn't need. Implementing a third-party solution would be as hitting a bug with a hammer, the possibility to overwrite some styles for our needs would be higher.  That's why we created our own systematic solution so we can scale it on our own without any third party dependencies.</p>
-            </div>   
-            <div class="project__section ">
-            <h4>WHAT WAS THE OUTCOME OF IMPLEMENTING IT OUR YOUR PRODUCTS?</h4>
-                <p>Better performance, consistency, faster implementation for new features, easier improvement of the older ones, and more scalable front-end architecture of the product. In addition to deleting a 15,000 line of repetitive CSS code.</p>
-                <img class="--margin-top-s" src="https://media.giphy.com/media/9xlzhm7XZFaja1E6QX/giphy.gif" alt="deleting lines of repeated code">
-            </div>   
-            <div class="project__section ">
-            <h4>on the web</h4>
-                <a href="http://kanbanize.github.io/eve" target="_blank" class="js-eve" alt="link to eve homepage" aria-label="link">visit eve homepage</a>
-            </div> 
-            <div class="one__elements --animation-none">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>   
+                <h2>Why did we decide to create our own design system?</h2>
+                <p>Most of the design systems and frameworks available now offer a variety of design solutions and
+                    thousands of components that we wouldn't need. Implementing a third-party solution would be as
+                    hitting a bug with a hammer, the possibility to overwrite some styles for our needs would be higher.
+                    That's why we created our own systematic solution so we can scale it on our own without any third
+                    party dependencies.</p>
             </div>
-        </div>     
-    </section>    
-<script src="dist/js/toggle-modes.js"></script>
-<script src="dist/js/main.min.js"></script>
+            <div class="project__section ">
+                <h2>What was the outcome of implementing it our your products?</h2>
+                <p>Better performance, consistency, faster implementation for new features, easier improvement of the
+                    older ones, and more scalable front-end architecture of the product. In addition to deleting a
+                    15,000 line of repetitive CSS code.</p>
+                <img class="--margin-top-s" src="https://media.giphy.com/media/9xlzhm7XZFaja1E6QX/giphy.gif"
+                    alt="deleting lines of repeated code">
+            </div>
+            <div class="project__section ">
+                <h4>on the web</h4>
+                <a href="http://kanbanize.github.io/eve" target="_blank" class="js-eve" alt="link to eve homepage"
+                    aria-label="link">visit eve homepage</a>
+            </div>
+        </div>
+
+        <div class="one__elements --animation-none">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>   
+        </div>    </section>
+    <script src="dist/js/toggle-modes.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
+
 </html>

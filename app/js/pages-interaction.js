@@ -4,7 +4,7 @@ let santeTarget = document.getElementsByClassName('js-sante')[0];
 let exquisiteTarget = document.getElementsByClassName('js-exquisite')[0];
 let framesTarget = document.getElementsByClassName('js-frames')[0];
 let humanlyTarget = document.getElementsByClassName('js-humanly')[0];
-let readingsTarget = document.getElementsByClassName('js-readings')[0];
+let aboutTarget = document.getElementsByClassName('js-about')[0];
 let body = document.querySelector('body');
 
 const addTheme = (target, theme) => {
@@ -23,4 +23,4 @@ addTheme(santeTarget, '--project-theme-sante');
 addTheme(exquisiteTarget, '--project-theme-exquisite');
 addTheme(framesTarget, '--project-theme-frames');
 addTheme(humanlyTarget, '--project-theme-humanly');
-addTheme(readingsTarget, '--project-theme-readings');
+addTheme(aboutTarget, '--project-theme-about');

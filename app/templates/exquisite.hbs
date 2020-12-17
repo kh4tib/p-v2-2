@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>mo // interaction // exquisite</title>
-<meta name="description" content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
-<meta name="twitter:title" content="mo // interaction // exquisite">
-<meta name="twitter:description" content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
-<meta itemprop="name" content="mo // interaction // exquisite">
-<meta itemprop="description" content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
-<meta property="og:title" content="mo // interaction // exquisite">
-<meta property="og:description" content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
-<meta property='og:url' content='http://khatib.work/exquisite.html'/>
-{{> meta}}
-<link rel="stylesheet" href="dist/css/style.min.css">
+    <title>mo // interaction // exquisite</title>
+    <meta name="description"
+        content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
+    <meta name="twitter:title" content="mo // interaction // exquisite">
+    <meta name="twitter:description"
+        content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
+    <meta itemprop="name" content="mo // interaction // exquisite">
+    <meta itemprop="description"
+        content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
+    <meta property="og:title" content="mo // interaction // exquisite">
+    <meta property="og:description"
+        content="exquisite is a fashion and beauty online magazine, made up of many components including fashion, beauty, culture, and art.">
+    <meta property='og:url' content='http://khatib.work/exquisite.html' />
+    {{> meta}}
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
+
 <body id="--project-theme-exquisite">
 
-    <section class="section__one section__project">
-        <div class="one__container project__container">
-            {{> back-button}} 
-            {{> toggle-switch}}
+    <section class="section__one">
+        <div class="one__container">
+            {{!-- Top Actions --}}
+            <div class="top__options">
+                {{> back-button}}
+                {{> toggle-switch}}
+            </div>
             <div class="project__section">
-                <h4>project 04 // exquisite // Interaction</h4>
-                <h1>Exquisite is a fashion and beauty online magazine 
-                        made up of many components including fashion, beauty, culture, 
-                        and art.</h1>
+                <h4>exquisite // Interaction</h4>
+                <h1>Exquisite is a fashion and beauty online magazine
+                    made up of many components including fashion, beauty, culture,
+                    and art.</h1>
             </div>
             <div class="project__section">
                 <h4>role</h4>
@@ -36,20 +45,15 @@
             </div>
             <div class="project__section">
                 <h4>on the web</h4>
-                <a href="https://www.behance.net/gallery/51575209/Exquisite" target="_blank" class="js-exquisite" alt="link to exquisite presentation" aria-label="link">visit exquisite presentation</a>
+                <a href="https://www.behance.net/gallery/51575209/Exquisite" target="_blank" class="js-exquisite"
+                    alt="link to exquisite presentation" aria-label="link">visit exquisite presentation</a>
             </div>
-            <div class="one__elements --animation-none">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>   
-            </div>
-        </div>     
-    </section>    
-<script src="dist/js/toggle-modes.js"></script>
-<script src="dist/js/main.min.js"></script>
+        </div>
+
+        {{> one__elements}}
+    </section>
+    <script src="dist/js/toggle-modes.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
+
 </html>

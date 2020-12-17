@@ -2,20 +2,22 @@
 
 // Eve Theme Styles
 
-@each $theme-name, $color-value, $radius-value, $rotation-value in 
-    (eve, $eve-theme-color, 0rem, -15deg),
-    (flow, $flow-theme-color, 15rem, 90deg),
-    (sante,$sante-theme-color, 50rem, -90deg),
-    (exquisite, $exquisite-theme-color, 5rem, 15deg),
-    (frames, $frames-theme-color, 20rem, -45deg),
-    (humanly, $humanly-theme-color, 50rem, 90deg),
-    (email, $email-theme-color),
-    (twitter, $twitter-theme-color),
-    (instagram, $instagram-theme-color),
-    (dribbble, $dribbble-theme-color),
-    (github, $github-theme-color),
-    (readings, $readings-theme-color, 2rem, 80deg){
-    
+@each $theme-name,
+$color-value,
+$radius-value,
+$rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
+(flow, $flow-theme-color, 15rem, 90deg),
+(sante, $sante-theme-color, 50rem, -90deg),
+(exquisite, $exquisite-theme-color, 5rem, 15deg),
+(frames, $frames-theme-color, 20rem, -45deg),
+(humanly, $humanly-theme-color, 50rem, 90deg),
+(email, $email-theme-color),
+(twitter, $twitter-theme-color),
+(instagram, $instagram-theme-color),
+(dribbble, $dribbble-theme-color),
+(github, $github-theme-color),
+(about, $readings-theme-color, 2rem, 80deg) {
+
     .--project-theme-#{$theme-name},
     #--project-theme-#{$theme-name} {
         .one__elements i {
@@ -27,6 +29,10 @@
         }
 
         h4 {
+            color: $color-value;
+        }
+
+        h2 {
             color: $color-value;
         }
 
@@ -51,36 +57,83 @@
             text-decoration-color: $color-value;
         }
 
-        ::selection {
+        ::-webkit-scrollbar-thumb {
             background: $color-value;
+        }
+
+
+        .contact {
+            a {
+                border-right: solid 1px rgba($color: $color-value, $alpha: 0.2);
+            }
+
+            :last-child {
+                border-right: none;
+            }
+        }
+
+        .projects {
+            .humanly__card {
+                border: 2px solid $color-value;
+
+                &:hover {
+                    border: 2px solid $color-value;
+                    box-shadow: -12px 12px 0px rgba($color: $color-value, $alpha: 1);
+
+                    h3 {
+                        color: $light-color;
+                    }
+
+                    .post__date {
+                        color: $color-value;
+                    }
+
+                }
+            }
+        }
+
+        .introduction__actions {
+            .action__button {
+                background-color: $color-value;
+                color: $light-color;
+            }
+        }
+
+        .projects__header {
+
+            div {
+                background: linear-gradient(90deg, rgba($color: $color-value, $alpha: 1) 0%, rgba($color: $color-value, $alpha: 0) 100%);
+            }
         }
     }
 }
 
 body.light-mode {
+
     .section__one {
         background: $light-color !important;
     }
 
-    .one__container {
-        background: $dark-dotted-page;
-        background-size: 2rem 2rem;
-        background-position: 1rem 1rem;
+    // .one__container {
+    //     background: $dark-dotted-page;
+    //     background-size: 2rem 2rem;
+    //     background-position: 1rem 1rem;
 
-    }
+    // }
 
     a {
         color: $dark-color;
     }
-    
-    li, ul {
+
+    li,
+    ul {
         color: $dark-color;
     }
-    
+
     p {
         color: $dark-color;
     }
-    
+
     h1 {
         color: $dark-color;
     }
@@ -88,23 +141,42 @@ body.light-mode {
     .typer {
         color: $dark-color;
     }
+
     .toggle__switch {
         background: rgba($dark-color, $alpha: 0.2);
     }
+
     .switch__cover {
         right: 34px;
         background: $light-color;
     }
 
-    .posts__post {
-        &:hover {
-            background: $light-color;
+    .top__options {
+        background-color:rgba($color: lighten($color: $dark-color, $amount: 88%), $alpha:0.98);
+    }
+
+    .contact {
+        background-color: lighten($color: $dark-color, $amount: 88%);
+    }
+
+    .introduction__actions {
+        .action__button {
+            color: $light-color;
+
+            &:hover {
+                border: 2px solid $light-color;
+            }
+            
         }
     }
 
-    .header__details {
-        h1 {
-            color: $light-color;
+    .projects {
+        .humanly__card {
+            &:hover {
+                h3 {
+                    color: $dark-color;
+                }
+            }
         }
     }
 }

@@ -1,111 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>mo // product designer</title>
-<meta name="description" content="product designer based in sofia, bulgaria // focused on user interfaces, design systems, and front-end implementation.">
-<meta name="twitter:title" content="mo // product designer">
-<meta name="twitter:description" content="product designer based in sofia, bulgaria // focused on user interfaces, design systems, and front-end implementation.">
-<meta itemprop="name" content="mo // product designer">
-<meta itemprop="description" content="product designer based in sofia, bulgaria // focused on user interfaces, design systems, and front-end implementation.">
-<meta property="og:title" content="mo // product designer">
-<meta property="og:description" content="product designer based in sofia, bulgaria // focused on user interfaces, design systems, and front-end implementation.">
-<meta property='og:url' content='http://khatib.work/index'/>
-<meta name="og:image" content="http://khatib.work/app/images/pages/homepage/homepage_coverImage_1200x630px.jpg">
-<meta name="og:twitter" content="http://khatib.work/app/images/pages/homepage/homepage_coverImage_1012x630px.jpg">
-{{> meta}}
-<link rel="stylesheet" href="dist/css/style.min.css">
+    <title>mo // product designer</title>
+    <meta name="description" content="pproduct designer based in sofia, bulgaria">
+    <meta name="twitter:title" content="mo // product designer">
+    <meta name="twitter:description" content="pproduct designer based in sofia, bulgaria">
+    <meta itemprop="name" content="mo // product designer">
+    <meta itemprop="description" content="pproduct designer based in sofia, bulgaria">
+    <meta property="og:title" content="mo // product designer">
+    <meta property="og:description" content="pproduct designer based in sofia, bulgaria">
+    <meta property='og:url' content='http://khatib.work/index' />
+    <meta name="og:image" content="http://khatib.work/app/images/pages/homepage/homepage_coverImage_1200x630px.jpg">
+    <meta name="og:twitter" content="http://khatib.work/app/images/pages/homepage/homepage_coverImage_1012x630px.jpg">
+    {{> meta}}
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
+
 <body>
     <section class="section__one">
         <div class="one__container">
-            {{> toggle-switch}}
-            {{!-- Header --}}
-            <div class="introduction">
+            {{!-- Top Actions --}}
+            <div class="top__options">
+                <div class="introduction__icon">👾</div>
+                {{> toggle-switch}}
+            </div>
+            {{!-- Introduction --}}
+            <div class="project__section">
+
                 <h1>
-                    <span class="typer" id="main" data-words="Hey,Здрасти,مرحبا,¡Hola!,您好,नमस्ते,Hallå,Здравствуйте,こんにちは" data-delay="100" data-deleteDelay="1000"></span>
+
+                    <span class="typer" id="main"
+                        data-words="Hey,Здрасти,مرحبا,¡Hola!,您好,नमस्ते,Hallå,Здравствуйте,こんにちは" data-delay="100"
+                        data-deleteDelay="1000"></span>
                     <span class="cursor" data-owner="main"></span>
-                    <br>i’m mo,
-                    <br>a product designer
-                    <br>focused on solving and building
-                    <br>human-centered products.
-                    <a href="/about.html" alt="link to about page" aria-label="link" class="introduction__more-button">
-                        more about me here 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="none" d="M0 0h24v24H0z"/>
-                            <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/>
-                        </svg>
-                        <img src="https://media.giphy.com/media/10Jpr9KSaXLchW/giphy.gif"/>
-                    </a> 
+
+                    <br>i’m mo, a product designer focused on solving and building human-centered products.
+                    <div class="introduction__actions">
+                        <a class="action__button js-about" href="/about.html" alt="link to about page"
+                            aria-label="link">
+                            about me
+                            {{!-- <img src="https://media.giphy.com/media/10Jpr9KSaXLchW/giphy.gif" /> --}}
+                        </a>
+
+                        <a class="action__button js-humanly" href="/humanly.html" alt="link to about page"
+                            aria-label="link">
+                            <div>writings</div>
+                            {{!-- <img src="https://media.giphy.com/media/10Jpr9KSaXLchW/giphy.gif" /> --}}
+                        </a>
+
+                    </div>
+
                 </h1>
             </div>
-            {{!-- Skills, Projects and more --}}
-            <div class="one__columns">
-                <div class="skills">
-                    <h4>skills</h4>
-                    <ul aria-label="list">
-                        <li aria-label="list-item">product design
-                            <img src="https://cdn.dribbble.com/users/501211/screenshots/2727885/music-player-800.png"/>
-                        </li>
-                        <li aria-label="list-item">experience design
-                            <img src="https://cdn.dribbble.com/users/501211/screenshots/3903459/whataboutus-gif.gif"/>
-                        </li>
-                        <li aria-label="list-item">interaction design
-                            <img src="https://cdn.dribbble.com/users/501211/screenshots/3264118/test.gif"/>
-                        </li>
-                        <li aria-label="list-item">interface design
-                            <img src="https://cdn.dribbble.com/users/501211/screenshots/3876374/untitled-1.gif"/>
-                        </li>
-                        <li aria-label="list-item">design systems
-                            <img src="https://cdn.dribbble.com/users/501211/screenshots/4000353/120517-framer-gif.gif"/>
-                        </li>
-                    </ul>
-                </div>
+            {{!-- Skills, Projects, Experiments --}}
+            <div class="project__section">
                 <div class="projects">
-                    <h4>projects</h4>
-                    <a href="/eve.html" class="js-eve" alt="link to eve homepage" aria-label="link">eve
-                        <div class="project__description">/ design system</div>
+                    <div class="projects__header">
+                        <h4>projects</h4>
+                        <div></div>
+                    </div>
+
+
+                    <a href="/eve.html" class="humanly__card js-eve" alt="link to eve homepage" aria-label="link">
+                        <h1>Eve</h1>
+                        <h4 class="post__date">Design System</h4>
+                        <p>Basic user interface elements, flexbox based responsive interfaces, pure css components.</p>
                     </a>
-                    <a href="/flow.html" class="js-flow" alt="link to flow-e video overview">flow-e
-                        <div class="project__description">/ product design</div>
+
+                    <a href="/flow.html" class="humanly__card js-flow" alt="link to flow-e video overview">
+                        <h1>Flow-e</h1>
+                        <h4 class="post__date">Product Design</h4>
+                        <p>An elegant kanban-like workflow that's combined with the ideas behind inbox zero inside your
+                            gmail and outlook.</p>
                     </a>
-                    <a href="/sante.html" class="js-sante" alt="link to sante presentation on behance" aria-label="link">sante
-                        <div class="project__description">/ interaction design</div>
+
+                    <a href="/framesofmind.html" class="humanly__card js-frames" alt="link to ui experimentans">
+                        <h1>Frames Of Mind</h1>
+                        <h4 class="post__date">Experimental</h4>
+                        <p>A collection of interface experiments.
+                        </p>
                     </a>
-                    <a href="/exquisite.html" class="js-exquisite" alt="link to exquisite presentation on behance" aria-label="link">ex
-                        <div class="project__description">/ interaction design</div>
+
+                    <a href="/sante.html" class="humanly__card js-sante" alt="link to sante presentation on behance"
+                        aria-label="link">
+                        <h1>Sante</h1>
+                        <h4 class="post__date">Product Design</h4>
+                        <p>A health coaching centre, where one can get the support and guidance needed to improve their
+                            health through lifestyle changes.</p>
                     </a>
+
+                    <a href="/exquisite.html" class="humanly__card js-exquisite"
+                        alt="link to exquisite presentation on behance" aria-label="link">
+                        <h1>Exquisite</h1>
+                        <h4 class="post__date">Product Design</h4>
+                        <p>Fashion and beauty online magazine.</p>
+                    </a>
+
+
                 </div>
-                <div class="experimentals">
-                    <h4>experimentals</h4>
-                    <a href="/humanly.html" class="js-humanly" alt="link to blog page" aria-label="link">humanly
-                        <div class="project__description">/ writing</div>
-                    </a>
-                    {{!-- <a href="/readings.html" class="js-readings" alt="link to readings journal" aria-label="link">readings
-                        <div class="project__description">/ reading journal</div>
-                    </a> --}}
-                    <a href="/framesofmind.html" class="js-frames" alt="link to ui experimentans">frames of mind
-                        <div class="project__description">/ ui</div>
-                    </a>
-                </div>
-                <div class="contact">
-                    {{> contact}}
-                </div>
+
             </div>
-            {{!-- Side Shapes Animation --}}
-            <div class="one__elements">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>   
-            </div>
-            
-        </div> 
-    </section>    
-<script src="app/libs/typer.js"></script>
-<script src="dist/js/toggle-modes.js"></script>
-<script src="dist/js/main.min.js"></script>
+            {{!-- Contact --}}
+            {{> contact}}
+
+        </div>
+        {{!-- Side Shapes Animation --}}
+
+        {{> one__elements}}
+    </section>
+    <script src="app/libs/typer.js"></script>
+    <script src="dist/js/toggle-modes.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
+
 </html>

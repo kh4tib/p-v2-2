@@ -10,6 +10,7 @@
     }
 }
 
+
 @keyframes animation-rotation {
     from {
         transform: rotate(-10deg);
@@ -46,4 +47,9 @@
 // Transitions
 %transition-3 {
     transition: .3s ease-in-out; 
+}
+
+.--animation-none {
+    opacity: 1;
+    animation: none;
 }
