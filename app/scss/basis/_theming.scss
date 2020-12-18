@@ -1,4 +1,7 @@
 // Color Theming
+
+// Eve Theme Styles
+
 @each $theme-name,
 $color-value,
 $radius-value,
@@ -95,15 +98,28 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
                 color: $light-color;
             }
         }
+
+        .projects__header {
+
+            div {
+                background: linear-gradient(90deg, rgba($color: $color-value, $alpha: 1) 0%, rgba($color: $color-value, $alpha: 0) 100%);
+            }
+        }
     }
 }
 
-// Mode Theming
 body.light-mode {
 
     .section__one {
         background: $light-color !important;
     }
+
+    // .one__container {
+    //     background: $dark-dotted-page;
+    //     background-size: 2rem 2rem;
+    //     background-position: 1rem 1rem;
+
+    // }
 
     a {
         color: $dark-color;
