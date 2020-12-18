@@ -1,4 +1,4 @@
-// Global Styles
+// General Styles
 * {
     padding: 0;
     margin: 0;
@@ -14,111 +14,6 @@ body {
     font-size: 1rem;
 }
 
-img,
-iframe {
-    width: 100%;
-    position: relative;
-    border-radius: 1.5rem;
-    box-shadow: 4px 16px 48px -4px rgba($color: #000000, $alpha: 0.8)
-}
-
-.section__one {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    background: $dark-color;
-}
-
-.one__container {
-    width: 800px;
-    max-height: 100%;
-    // background: $light-dotted-page;
-    // background-size: 2rem 2rem;
-    // background-position: 1rem 1rem;
-    padding: 2.5rem 4rem;
-    z-index: 1;
-    position: relative;
-    border-radius: 1.5rem;
-    box-shadow: 4px 16px 48px -4px rgba($color: #000000, $alpha: 0.8);
-    backdrop-filter: blur(16px);
-    margin: 2rem 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    z-index:  2;
-}
-
-// .background__blur {
-//     backdrop-filter: blur(16px);
-//     position: absolute;
-//     width: calc( 800px + 8rem);
-//     height: calc( 100% - 4rem);
-//     top: 2rem;
-//     z-index:  1;
-// }
-
-
-.one__elements {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    opacity: 0;
-    padding: inherit;
-    animation:
-        animation-opacity 1s ease-in-out forwards 1,
-        animation-rotation 1s ease-out forwards 1;
-    animation-delay: 1s;
-
-    @for $i from 1 through 8 {
-        :nth-child(#{$i}) {
-            width: $i *12rem;
-            height: $i * 12rem;
-            transform: rotate($i * 2deg);
-            // border: 2px solid $primary-color;
-            background: rgba($primary-color, $alpha: 0.1);
-            position: absolute;
-            transition: 1s ease-in-out;
-            z-index: -#{$i};
-            border-radius: 20rem;
-            box-shadow: 0 8px 32px -1px rgba(0, 0, 0, .5);
-        }
-    }
-}
-
-.project__section {
-    opacity: 0;
-    animation: animation-opacity 1s ease-in-out forwards 1;
-    margin-top: 4rem;
-    position: relative;
-
-    p {
-        margin-top: 1rem;
-    }
-}
-
-// Scroll Styles
-::-webkit-scrollbar {
-    width: .5rem;
-    background: transparent;
-    cursor: pointer;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 1.5rem;
-    background: $primary-color;
-}
-
-// Main Attributes Styles
 a {
     font-size: 1rem;
     line-height: 200%;
@@ -177,54 +72,128 @@ h4 {
     @extend %transition-3
 }
 
-.contact {
+img,
+iframe {
     width: 100%;
-    opacity: 0;
-    height: 32px;
-    display: flex;
-    padding: 1.5rem;
+    position: relative;
     border-radius: 1.5rem;
-    background-color: rgba($color: $light-color, $alpha: 0.02);
-    justify-content: space-evenly;
+    box-shadow: 4px 16px 48px -4px rgba($color: #000000, $alpha: 0.8)
+}
+
+// Layout Styles
+.section__one {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background: $dark-color;
+}
+
+.one__container {
+    width: 800px;
+    max-height: 100%;
+    // background: $light-dotted-page;
+    // background-size: 2rem 2rem;
+    // background-position: 1rem 1rem;
+    padding: 2.5rem 4rem;
+    z-index: 1;
+    position: relative;
+    border-radius: 1.5rem;
+    box-shadow: 4px 16px 48px -4px rgba($color: #000000, $alpha: 0.8);
+    backdrop-filter: blur(16px);
+    margin: 2rem 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     z-index: 2;
-    margin-top: 2rem;
-    margin-left: -1.5rem;
+}
+
+.project__section {
+    opacity: 0;
     animation: animation-opacity 1s ease-in-out forwards 1;
+    margin-top: 4rem;
+    position: relative;
 
-    a {
-        width: calc( 100% / 5);
-        height: 32px;
-        display: flex;
-        justify-content: center;
-        border-right: solid 1px rgba($color: $primary-color, $alpha: 0.2);
-    }
-
-    :last-child {
-        border-right: none;
+    p {
+        margin-top: 1rem;
     }
 }
 
-.top__options {
+.projects {
+    .humanly__card {
+        border-color: $primary-color;
+    }
+}
+
+// Scroll Styles
+::-webkit-scrollbar {
+    width: .5rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1.5rem;
+    background: $primary-color;
+}
+
+// Side Shapes Styles
+.one__elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
     opacity: 0;
-    animation: animation-opacity 1s ease-in-out forwards 1;
+    padding: inherit;
+    animation:
+        animation-opacity 1s ease-in-out forwards 1,
+        animation-rotation 1s ease-out forwards 1;
+    animation-delay: 1s;
+
+    @for $i from 1 through 8 {
+        :nth-child(#{$i}) {
+            width: $i *12rem;
+            height: $i * 12rem;
+            transform: rotate($i * 2deg);
+            // border: 2px solid $primary-color;
+            background: rgba($primary-color, $alpha: 0.1);
+            position: absolute;
+            transition: 1s ease-in-out;
+            z-index: -#{$i};
+            border-radius: 20rem;
+            box-shadow: 0 8px 32px -1px rgba(0, 0, 0, .5);
+        }
+    }
+}
+
+// Header Styles
+.top__options {
+    opacity: 1;
     width: 100%;
     height: 32px;
     display: flex;
-    position: sticky;
     padding: 1.5rem;
     margin-left: -1.5rem;
     top: 0;
     border-radius: 1.5rem;
     background-color: lighten($color: $dark-color, $amount: 1%);
-    background-color:rgba($color: lighten($color: $dark-color, $amount: 1%), $alpha:0.98);
+    background-color: rgba($color: lighten($color: $dark-color, $amount: 1%), $alpha:0.98);
     justify-content: space-between;
     z-index: 2;
     backdrop-filter: blur(8px);
-    box-shadow: 4px 8px 24px -4px rgba(0,0,0,0.4);
+    box-shadow: 4px 8px 24px -4px rgba(0, 0, 0, 0.4);
 
-    @media only screen and (max-width:768px) {
-        display: none;
-    }
+    // @media only screen and (max-width:768px) {
+    //     display: none;
+    // }
 }
 
 .project__back-btn {
@@ -289,6 +258,31 @@ h4 {
         right: 2px;
         z-index: 999;
         position: absolute;
+    }
+}
+
+// Footer Styles
+.contact {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: rgba($color: $light-color, $alpha: 0.02);
+    justify-content: space-evenly;
+    z-index: 2;
+    margin-left: -1.5rem;
+
+    a {
+        width: calc(100% / 5);
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        border-right: solid 1px rgba($color: $primary-color, $alpha: 0.2);
+    }
+
+    :last-child {
+        border-right: none;
     }
 }
 

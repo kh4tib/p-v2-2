@@ -25,9 +25,11 @@
     <section class="section__one --project-theme-humanly">
         <div class="one__container">
             {{!-- Top Actions --}}
-            <div class="top__options">
-                {{> post-back-button}}
-                {{> toggle-switch}}
+            <div class="project__section --margin-top-none --position-sticky --index-top">
+                <div class="top__options">
+                    {{> post-back-button}}
+                    {{> toggle-switch}}
+                </div>
             </div>
             {{!-- Header --}}
             <div class="project__section">
@@ -87,12 +89,10 @@
                     I sit to do so. I overwhelm myself and end up writing nothing. This one is a new fresh start.
                     Cheers!
                 </p>
-                {{> contact}}
-
-
             </div>
+            {{> contact}}
         </div>
-
+        
         {{> one__elements}}
     </section>
     <script src="../dist/js/toggle-modes.js"></script>

@@ -1,4 +1,3 @@
-// Spacing Top
 .--margin-top-l {
     margin-top: 4rem
 }
@@ -7,3 +6,15 @@
     margin-top: 2rem
 }
 
+.--margin-top-none {
+    margin-top: 0 !important;
+}
+
+.--position-sticky {
+    position: sticky !important;
+    top: 0;
+}
+
+.--index-top {
+    z-index: 9999;
+}

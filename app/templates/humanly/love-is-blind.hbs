@@ -25,9 +25,11 @@
     <section class="section__one --project-theme-humanly">
         <div class="one__container">
             {{!-- Top Actions --}}
-            <div class="top__options">
-                {{> post-back-button}}
-                {{> toggle-switch}}
+            <div class="project__section --margin-top-none --position-sticky --index-top">
+                <div class="top__options">
+                    {{> post-back-button}}
+                    {{> toggle-switch}}
+                </div>
             </div>
             {{!-- Header --}}
             <div class="project__section">
@@ -111,11 +113,8 @@
                     <img src="https://media.giphy.com/media/SLbZ0D6YoO7io/giphy.gif" alt="Shipped">
                     <p>Shipped // via giphy</p>
                 </div>
-
-                {{> contact}}
-
-
             </div>
+            {{> contact}}
         </div>
 
         {{> one__elements}}

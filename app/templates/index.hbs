@@ -20,16 +20,17 @@
 <body>
     <section class="section__one">
         <div class="one__container">
-            {{!-- Top Actions --}}
+            <div class="project__section --margin-top-none --position-sticky --index-top">
             <div class="top__options">
-                <div class="introduction__icon">👾</div>
+                <img class="introduction__icon" src="http://khatib.work/app/images/pages/homepage/img-momoji.png" alt="">
                 {{> toggle-switch}}
             </div>
+            </div>
+
             {{!-- Introduction --}}
             <div class="project__section">
 
                 <h1>
-
                     <span class="typer" id="main"
                         data-words="Hey,Здрасти,مرحبا,¡Hola!,您好,नमस्ते,Hallå,Здравствуйте,こんにちは" data-delay="100"
                         data-deleteDelay="1000"></span>
@@ -60,7 +61,6 @@
                         <h4>projects</h4>
                         <div></div>
                     </div>
-
 
                     <a href="/eve.html" class="humanly__card js-eve" alt="link to eve homepage" aria-label="link">
                         <h1>Eve</h1>
@@ -96,14 +96,14 @@
                         <h4 class="post__date">Product Design</h4>
                         <p>Fashion and beauty online magazine.</p>
                     </a>
-                    {{> contact}}
+
                 </div>
             </div>
-
-
+            <div class="project__section">
+                {{> contact}}
+            </div>
         </div>
         {{!-- Side Shapes Animation --}}
-
         {{> one__elements}}
     </section>
     <script src="app/libs/typer.js"></script>
