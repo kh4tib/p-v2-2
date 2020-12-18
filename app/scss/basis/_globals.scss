@@ -129,8 +129,6 @@ iframe {
     }
 }
 
-
-
 // Scroll Styles
 ::-webkit-scrollbar {
     width: .5rem;
@@ -187,7 +185,7 @@ iframe {
     top: 0;
     border-radius: 1.5rem;
     background-color: lighten($color: $dark-color, $amount: 1%);
-    background-color: rgba($color: lighten($color: $dark-color, $amount: 1%), $alpha:0.98);
+    background-color: rgba($color: lighten($color: $dark-color, $amount: 1%), $alpha:0.8);
     justify-content: space-between;
     z-index: 2;
     backdrop-filter: blur(8px);
