@@ -1,7 +1,3 @@
-// Color Theming
-
-// Eve Theme Styles
-
 @each $theme-name,
 $color-value,
 $radius-value,
@@ -104,6 +100,10 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
             div {
                 background: linear-gradient(90deg, rgba($color: $color-value, $alpha: 1) 0%, rgba($color: $color-value, $alpha: 0) 100%);
             }
+        }
+
+        .cursor {
+            color: $color-value;
         }
     }
 }
