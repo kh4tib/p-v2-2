@@ -156,7 +156,7 @@ body.light-mode {
     }
 
     .contact {
-        background-color: lighten($color: $dark-color, $amount: 88%);
+        background-color:rgba($color: lighten($color: $dark-color, $amount: 88%), $alpha:0.4);
     }
 
     .introduction__actions {
