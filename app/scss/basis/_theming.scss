@@ -11,8 +11,8 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
 (twitter, $twitter-theme-color),
 (instagram, $instagram-theme-color),
 (dribbble, $dribbble-theme-color),
-(github, $github-theme-color),
-(about, $readings-theme-color, 2rem, 80deg) {
+(github, $linkedin-theme-color),
+(about, $about-theme-color, 2rem, 80deg) {
 
     .--project-theme-#{$theme-name},
     #--project-theme-#{$theme-name} {
