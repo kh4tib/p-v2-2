@@ -43,8 +43,8 @@
     }
 
     &:hover {
-        box-shadow: -8px 8px 0px rgba($color: $secondary-color, $alpha: 1);
-        border: 2px solid $dark-color;
+        background-color: $secondary-color;
+        color: $light-color;
     }
 
     img {

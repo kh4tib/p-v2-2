@@ -70,11 +70,11 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
 
         .projects {
             .humanly__card {
-                border: 2px solid $color-value;
+                // border: 2px solid $color-value;
 
                 &:hover {
-                    border: 2px solid $color-value;
-                    box-shadow: -12px 12px 0px rgba($color: $color-value, $alpha: 1);
+                //     border: 2px solid $color-value;
+                //     box-shadow: -12px 12px 0px rgba($color: $color-value, $alpha: 1);
 
                     h3 {
                         color: $light-color;
@@ -162,13 +162,10 @@ body.light-mode {
     .introduction__actions {
         .action__button {
             color: $light-color;
-
-            &:hover {
-                border: 2px solid $light-color;
-            }
             
         }
     }
+
 
     .projects {
         .humanly__card {
