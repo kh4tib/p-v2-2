@@ -166,6 +166,9 @@ body.light-mode {
         }
     }
 
+    .humanly__card {
+        background-color: rgba($color: $dark-color, $alpha: 0.05);
+    }
 
     .projects {
         .humanly__card {
