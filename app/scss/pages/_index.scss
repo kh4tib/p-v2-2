@@ -1,14 +1,6 @@
-.introduction__actions {
-    display: flex;
-    margin-top: 1rem;
-}
-
 .introduction__icon {
     width: auto;
-    height: 5.5rem;
-    box-shadow: none;
-    bottom: 1.6rem;
-    left: -0.75rem;
+    height: 2rem;
 }
 
 
@@ -20,56 +12,64 @@
     color: $primary-color;
 }
 
-
-.action__button {
-    width: 12rem;
-    height: 3.5rem;
-    border-radius: 3rem;
-    margin-top: 1rem;
-    background-color: rgba($color: $primary-color, $alpha: 1);
-    color: $light-color;
+.introduction__actions {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 0.25rem;
-    border: 2px solid transparent;
+    margin-top: 1rem;
+    box-shadow: none;
 
-    :last-child {
-        margin-right: 0;
-    }
 
-    &:hover {
-        background-color: $secondary-color;
+    .action__button {
+        width: 12rem;
+        height: 3.5rem;
+        border-radius: 3rem;
+        margin-top: 1rem;
+        background-color: rgba($color: $primary-color, $alpha: 1);
         color: $light-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.25rem;
+        border: 2px solid transparent;
     }
 
-    img {
-        opacity: 0;
-        position: absolute;
-        z-index: -3;
-        top: 4rem;
-        left: 4rem;
-        transition: opacity .3s ease-in-out;
-        pointer-events: none;
-    }
+    // :last-child {
+    //     margin-right: 0;
+    // }
+
+    // &:hover {
+    //     background-color: $secondary-color;
+    //     color: $light-color;
+    // }
+
+    // img {
+    //     opacity: 0;
+    //     position: absolute;
+    //     z-index: -3;
+    //     top: 4rem;
+    //     left: 4rem;
+    //     transition: opacity .3s ease-in-out;
+    //     pointer-events: none;
+    // }
 
 
-    &:hover {
-        img {
-            opacity: .2;
-        }
+    // &:hover {
+    //     img {
+    //         opacity: .2;
+    //     }
 
-        svg {
-            fill: $primary-color;
-        }
-    }
+    //     svg {
+    //         fill: $primary-color;
+    //     }
+    // }
 }
 
-
+.js-humanly {
+    visibility: hidden;
+}
 
 .projects {
     .humanly__card {
