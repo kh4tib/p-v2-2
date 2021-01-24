@@ -3,7 +3,6 @@
     height: 2rem;
 }
 
-
 .typer {
     font-family: 'Space Mono', monospace, 'Reem Kufi', sans-serif, 'Zhi Mang Xing', cursive;
 }
@@ -64,8 +63,40 @@
     }
 }
 
-
-// Tper Stiles
+// Typer Styles
 .typer {
     color: $light-color;
+}
+
+
+
+.skills {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        h1 {
+            cursor: default;
+            margin-right: 1rem;
+
+            img {
+                opacity: 0; 
+                position: absolute;
+                z-index: -3;
+                left: 8rem;
+                bottom: 2rem;
+                transition: opacity .3s ease-in-out;
+                pointer-events: none;
+            }
+
+            &:hover {
+                color: #555;
+
+                img {
+                    opacity: .2;
+                }
+
+            }
+        }
+    }
 }

@@ -1,4 +1,3 @@
-//About
 .feed {
     width: calc(100% + 2rem);
     height: 100%;
@@ -101,37 +100,36 @@
             width: auto;
         }
     }
+}
 
+.skills {	
 
-// Skills in About
-.skills {
+    ul {	
+        display: flex;	
+        flex-wrap: wrap;	
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
+        h1 {	
+            cursor: default;	
+            margin-right: 1rem;	
 
-        h1 {
-            cursor: default;
-            margin-right: 1rem;
+            img {	
+                opacity: 0;	
+                position: absolute;	
+                z-index: -3;	
+                left: 8rem;	
+                bottom: 2rem;	
+                transition: opacity .3s ease-in-out;	
+                pointer-events: none;	
+            }	
 
-            img {
-                opacity: 0;
-                position: absolute;
-                z-index: -3;
-                left: 8rem;
-                bottom: 2rem;
-                transition: opacity .3s ease-in-out;
-                pointer-events: none;
-            }
+            &:hover {	
+                color: #555;	
 
-            &:hover {
-                color: #555;
+                img {	
+                    opacity: .2;	
+                }	
 
-                img {
-                    opacity: .2;
-                }
-
-            }
-        }
-    }
-}}
+            }	
+        }	
+    }	
+}

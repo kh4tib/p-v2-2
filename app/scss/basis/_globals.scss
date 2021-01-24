@@ -77,8 +77,17 @@ iframe {
     width: 100%;
     position: relative;
     border-radius: 1.5rem;
-    box-shadow: 4px 16px 48px -4px rgba($color: #000000, $alpha: 0.8)
+    box-shadow: 4px 16px 48px -4px rgba($color: #000000, $alpha: 0.8);
+    @extend %transition-3;
 }
+
+    .img__link {
+        &:hover {
+            box-shadow: 2px 4px 8px -2px rgba($color: #000000, $alpha: 0.8);
+            @extend %transition-3;
+        }
+    }
+
 
 // Layout Styles
 .section__one {
@@ -190,10 +199,6 @@ iframe {
     z-index: 2;
     backdrop-filter: blur(8px);
     box-shadow: 4px 8px 24px -4px rgba(0, 0, 0, 0.4);
-
-    // @media only screen and (max-width:768px) {
-    //     display: none;
-    // }
 }
 
 .project__back-btn {
