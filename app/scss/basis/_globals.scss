@@ -47,7 +47,6 @@ p {
 h1 {
     font-size: 3rem;
     line-height: 100%;
-    letter-spacing: -2px;
     word-spacing: -4px;
     font-weight: 700;
     color: $light-color;
@@ -56,10 +55,16 @@ h1 {
     @extend %transition-3
 }
 
+@media only screen and (max-width:768px){
+    h1 {
+        font-size: 2rem;
+        line-height: 110%;
+    }
+}
+
 h2 {
     font-size: 2rem;
-    line-height: 125%;
-    letter-spacing: -2px;
+    line-height: 110%;
     word-spacing: -4px;
     color: $primary-color;
     margin-bottom: 1rem;
