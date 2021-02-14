@@ -47,6 +47,7 @@ p {
 h1 {
     font-family: $secondary-font;
     font-size: 4rem;
+    letter-spacing: 2px;
     line-height: 90%;
     color: $light-color;
     // margin-bottom: 1rem;
@@ -64,6 +65,7 @@ h1 {
 h2 {    
     font-family: $secondary-font;
     font-size: 2rem;
+    letter-spacing: 2px;
     line-height: 90%;    
     color: $primary-color;
     margin-bottom: 1rem;
