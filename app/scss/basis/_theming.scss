@@ -105,6 +105,18 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
         .cursor {
             color: $color-value;
         }
+
+        .skills {	
+            ul {	
+                h1 {
+        
+                    &:hover {	
+                        color: $color-value;	
+    
+                    }	
+                }	
+            }	
+        }
     }
 }
 

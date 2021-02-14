@@ -45,27 +45,28 @@ p {
 }
 
 h1 {
-    font-size: 3rem;
-    line-height: 100%;
-    word-spacing: -4px;
-    font-weight: 700;
+    font-family: $secondary-font;
+    font-size: 4rem;
+    line-height: 90%;
+    letter-spacing: 2px;
     color: $light-color;
     // margin-bottom: 1rem;
     text-transform: lowercase;
-    @extend %transition-3
+    @extend %transition-3;
 }
 
 @media only screen and (max-width:768px){
     h1 {
-        font-size: 2rem;
-        line-height: 110%;
+        font-size: 3rem;
+        line-height: 90%;
     }
 }
 
-h2 {
+h2 {    
+    font-family: $secondary-font;
     font-size: 2rem;
-    line-height: 110%;
-    word-spacing: -4px;
+    line-height: 100%;
+    letter-spacing: 2px;
     color: $primary-color;
     margin-bottom: 1rem;
     @extend %transition-3

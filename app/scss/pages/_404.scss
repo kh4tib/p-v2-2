@@ -8,12 +8,13 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     text-align: center;
 
+
     &:after {
-        content:'';
+        content: '';
         width: 100%;
         height: 100%;
         position: absolute;
@@ -23,7 +24,9 @@
         opacity: .8;
     }
 
-    h1, h4, a {
+    h1,
+    h4,
+    a {
         z-index: 5;
         margin-bottom: 1rem;
     }
@@ -34,4 +37,3 @@
     color: $dark-shade-color;
     margin-bottom: 1rem;
 }
-
