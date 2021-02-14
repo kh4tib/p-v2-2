@@ -48,7 +48,7 @@ h1 {
     font-family: $secondary-font;
     font-size: 4rem;
     line-height: 90%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: $light-color;
     // margin-bottom: 1rem;
     text-transform: lowercase;
@@ -65,8 +65,8 @@ h1 {
 h2 {    
     font-family: $secondary-font;
     font-size: 2rem;
-    line-height: 100%;
-    letter-spacing: 2px;
+    line-height: 100%;    
+    letter-spacing: 1px;
     color: $primary-color;
     margin-bottom: 1rem;
     @extend %transition-3
