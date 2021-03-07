@@ -12,7 +12,8 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
 (instagram, $instagram-theme-color),
 (dribbble, $dribbble-theme-color),
 (github, $linkedin-theme-color),
-(about, $about-theme-color, 50rem, 90deg) {
+(about, $about-theme-color, 50rem, 90deg),
+(audiences, $audiences-theme-color, 24rem, 160deg) {
 
     .--project-theme-#{$theme-name},
     #--project-theme-#{$theme-name} {
@@ -73,8 +74,8 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
                 // border: 2px solid $color-value;
 
                 &:hover {
-                //     border: 2px solid $color-value;
-                //     box-shadow: -12px 12px 0px rgba($color: $color-value, $alpha: 1);
+                    //     border: 2px solid $color-value;
+                    //     box-shadow: -12px 12px 0px rgba($color: $color-value, $alpha: 1);
 
                     h3 {
                         color: $light-color;
@@ -86,6 +87,10 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
 
                 }
             }
+        }
+
+        .humanly__badge {
+            background: $color-value;
         }
 
         .introduction__actions {
@@ -106,16 +111,36 @@ $rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
             color: $color-value;
         }
 
-        .skills {	
-            ul {	
+        .list__item {
+
+            .list__title {
+                color: $color-value;
+
+            }
+
+            .list__cue {
+                background: rgba($color: $color-value, $alpha: 0.12);
+
+                svg {
+                    fill: $color-value;
+                }
+            }
+        }
+
+        .color__primary {
+            color: $color-value;
+        }
+
+        .skills {
+            ul {
                 h1 {
-        
-                    &:hover {	
-                        color: $color-value;	
-    
-                    }	
-                }	
-            }	
+
+                    &:hover {
+                        color: $color-value;
+
+                    }
+                }
+            }
         }
     }
 }
@@ -164,17 +189,17 @@ body.light-mode {
     }
 
     .top__options {
-        background-color:rgba($color: lighten($color: $dark-color, $amount: 88%), $alpha:0.8);
+        background-color: rgba($color: lighten($color: $dark-color, $amount: 88%), $alpha:0.8);
     }
 
     .contact {
-        background-color:rgba($color: lighten($color: $dark-color, $amount: 88%), $alpha:0.4);
+        background-color: rgba($color: lighten($color: $dark-color, $amount: 88%), $alpha:0.4);
     }
 
     .introduction__actions {
         .action__button {
             color: $light-color;
-            
+
         }
     }
 

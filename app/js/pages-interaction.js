@@ -5,6 +5,8 @@ let exquisiteTarget = document.getElementsByClassName('js-exquisite')[0];
 let framesTarget = document.getElementsByClassName('js-frames')[0];
 let humanlyTarget = document.getElementsByClassName('js-humanly')[0];
 let aboutTarget = document.getElementsByClassName('js-about')[0];
+let audiencesTarget = document.getElementsByClassName('js-audiences')[0];
+
 let body = document.querySelector('body');
 
 const addTheme = (target, theme) => {
@@ -24,3 +26,4 @@ addTheme(exquisiteTarget, '--project-theme-exquisite');
 addTheme(framesTarget, '--project-theme-frames');
 addTheme(humanlyTarget, '--project-theme-humanly');
 addTheme(aboutTarget, '--project-theme-about');
+addTheme(audiencesTarget, '--project-theme-audiences');
