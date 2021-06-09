@@ -1,7 +1,7 @@
 @each $theme-name,
 $color-value,
 $radius-value,
-$rotation-value in (eve, $eve-theme-color, 0rem, -15deg),
+$rotation-value in (eve, $eve-theme-color, 24rem, 48deg),
 (flow, $flow-theme-color, 15rem, 90deg),
 (sante, $sante-theme-color, 50rem, -90deg),
 (exquisite, $exquisite-theme-color, 5rem, 15deg),
