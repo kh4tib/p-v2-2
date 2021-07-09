@@ -201,6 +201,7 @@ iframe {
     width: 100%;
     height: 32px;
     display: flex;
+    align-items: center;
     padding: 1.5rem;
     margin-left: -1.5rem;
     top: 0;
@@ -216,33 +217,43 @@ iframe {
 .project__back-btn {
     position: relative;
     height: 2rem;
-    width: 4rem;
+    width: auto;
     border-radius: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     z-index: 2;
-    cursor: pointer;
-    background: rgba($color: $primary-color, $alpha: .1);
+    // cursor: pointer;
+    // background: rgba($color: $primary-color, $alpha: .1);
     align-self: flex-start;
     transition: ease-in-out .4s;
+    // padding: 0 1rem;
 
-    .back__link {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        z-index: 3;
+    // .back__link {
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    //     left: 0;
+    //     top: 0;
+    //     z-index: 3;
+    // }
+
+    // svg {
+    //     fill: $primary-color;
+    //     @extend %transition-3
+    // }
+
+    // &:hover {
+    //     background-color: rgba($color: $primary-color, $alpha: .2)
+    // }
+
+    .breadcrumb__emoji {
+        font-size: 20px;
     }
-
-    svg {
-        fill: $primary-color;
-        @extend %transition-3
-    }
-
-    &:hover {
-        background-color: rgba($color: $primary-color, $alpha: .2)
+    .breadcrumb__seperator {
+    width: 2rem;
+    margin: 0 1rem;
+    height: 2px;
+    background-color: $secondary-color;
     }
 }
 

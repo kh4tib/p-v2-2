@@ -1,10 +1,7 @@
 .introduction__icon {
-    width: auto;
-    height: 2rem;
-    border-radius: 0;
-    box-shadow: none;
     animation: wave 2s linear;
     animation-delay: 1s;
+    font-size: 1.5rem;
 
     @keyframes wave {
         0% {
@@ -90,9 +87,9 @@
     }
 }
 
-.js-humanly {
-    visibility: hidden;
-}
+// .js-humanly {
+//     visibility: hidden;
+// }
 
 .projects {
     .humanly__card {
@@ -110,6 +107,13 @@
         background: linear-gradient(90deg, rgba($color: $primary-color, $alpha: 1) 0%, rgba($color: $primary-color, $alpha: 0) 100%);
         margin-left: 1rem;
         border-radius: 1rem;
+    }
+
+    a {
+        background: none !important;
+        margin-left: 1rem;
+        white-space: nowrap;
+
     }
 
     h4 {

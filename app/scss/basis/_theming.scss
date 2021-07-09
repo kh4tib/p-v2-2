@@ -38,15 +38,19 @@ $rotation-value in (eve, $eve-theme-color, 24rem, 48deg),
         }
 
         .project__back-btn {
-            background: rgba($color: $color-value, $alpha: .1);
+            // background: rgba($color: $color-value, $alpha: .1);
 
-            svg {
-                fill: $color-value;
-            }
+            // svg {
+            //     fill: $color-value;
+            // }
 
-            &:hover {
-                background-color: rgba($color: $color-value, $alpha: .2)
-            }
+            // &:hover {
+            //     background-color: rgba($color: $color-value, $alpha: .2)
+            // }
+
+            .breadcrumb__seperator {
+                background-color: $color-value;
+                }
         }
 
         a:hover {

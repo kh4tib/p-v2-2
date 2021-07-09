@@ -61,7 +61,13 @@ gulp.task('build-handlebars', function () {
    gulp.src(['app/templates/humanly/*.hbs'])
   .pipe(handlebars(templateData,options))
   .pipe(rename({extname: ".html"}))
-  .pipe(gulp.dest('humanly'));
+  .pipe(gulp.dest('humanly'))
+
+
+//   gulp.src(['app/templates/projects/*.hbs'])
+//  .pipe(handlebars(templateData,options))
+//  .pipe(rename({extname: ".html"}))
+//  .pipe(gulp.dest('projects'))
 });
 
 // Build All
